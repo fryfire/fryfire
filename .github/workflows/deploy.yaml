@@ -21,11 +21,13 @@ jobs:
       - name: Create API documentation
         run: npm run doc
       - name: Get branch name
-        uses: nelonoel/branch-name@v1
+        run: echo ::set-env name=BRANCH_NAME::${GITHUB_REF##*/}
+        env:
+            GITHUB_REF: ${{ github.ref }}
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: doc/api/
-          TARGET_FOLDER: api/${{ github.ref }}/
+          TARGET_FOLDER: api/${{ env.BRANCH_NAME }}/
