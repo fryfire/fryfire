@@ -26,4 +26,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: doc/api/
-          TARGET_FOLDER: api/{GIT_BRANCH_NAME}/
+          TARGET_FOLDER: api/${GIT_BRANCH_NAME}/
