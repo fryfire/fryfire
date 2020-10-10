@@ -10,11 +10,14 @@
 /out/
 /dist/
 /.webpack/
+/doc/api/
 /*.tgz
 
 # Crash logs and backups
 /*.log
 *~
 *.psd
-assets/music/SPOILER_theme_01.mmpz
 *.bak
+
+# Temporary stuff
+sandbox/

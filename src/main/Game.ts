@@ -56,6 +56,13 @@ export abstract class Game {
     private gameLoopId: number | null = null;
     private readonly timer = new Timer();
 
+    /**
+     * Creates a new game with the given arguments.
+     *
+     * @param args - The optional game arguments.
+     */
+    public constructor(args?: GameArgs);
+
     public constructor({ backgroundColor = new RGBColor(0, 0, 0), size = null,
             pixelated = size != null }: GameArgs = {}) {
         const canvas = this.canvas = createCanvas(320, 200);
