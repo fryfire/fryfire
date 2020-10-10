@@ -15,7 +15,9 @@ jobs:
         run: npm install
       - name: Run tests
         uses: GabrielBB/xvfb-action@v1
-        run: npm coverage
+        with:
+          working-directory: ./
+          run: npm run coverage
       - name: Create API documentation
         run: npm run doc
       - name: Deploy
