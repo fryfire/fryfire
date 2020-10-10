@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json.schemastore.org/package#",
+  "name": "fryfire",
+  "version": "1.0.0",
+  "description": "A small game engine written in TypeScript focusing 2D pixel art games for the Web or Electron",
+  "homepage": "TODO",
+  "author": "TODO",
+  "maintainers": [],
+  "keywords": [
+    "fryfire",
+    "game",
+    "engine",
+    "gamejam",
+    "friendly fire",
+    "hyperloop"
+  ],
+  "license": "SEE LICENSE IN LICENSE.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fryfire/fryfire"
+  },
+  "steal": {
+    "directories": {
+      "lib": "./lib/main"
+    }
+  },
+  "exports": {
+      "./": "./lib/main/"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "markdownlint": "markdownlint -c ./.markdownlint.json -i node_modules/ -i lib/ .",
+    "eslint": "eslint --ext .ts ./src/",
+    "lint": "npm run -s markdownlint && npm run -s eslint",
+    "check": "jest",
+    "cspell": "cspell '**/*'",
+    "coverage": "jest --coverage",
+    "test": "npm run -s cspell && npm run -s lint && npm run -s check",
+    "compile": "tsc",
+    "watch": "tsc -w",
+    "prepare": "npm run -s clean && npm run -s compile"
+  },
+  "devDependencies": {
+    "@jest-runner/electron": "3.0.0",
+    "@types/base64-js": "1.3.0",
+    "@types/jest": "26.0.14",
+    "@types/pako": "1.0.1",
+    "@typescript-eslint/eslint-plugin": "4.4.0",
+    "@typescript-eslint/parser": "4.4.0",
+    "copy-webpack-plugin": "6.2.0",
+    "cspell": "4.1.0",
+    "electron": "10.1.3",
+    "eslint": "7.10.0",
+    "jest": "26.5.2",
+    "jest-extended": "0.11.5",
+    "jest-sonar-reporter": "2.0.0",
+    "markdownlint": "0.21.0",
+    "markdownlint-cli": "0.24.0",
+    "rimraf": "3.0.2",
+    "source-map-loader": "1.1.0",
+    "steal": "2.2.4",
+    "typescript": "4.0.3"
+  },
+  "dependencies": {
+    "base64-js": "^1.3.1",
+    "pako": "^1.0.11",
+    "tslib": "^2.0.1"
+  }
+}

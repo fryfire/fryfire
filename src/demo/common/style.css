@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    touch-action: none;
+    overflow: hidden;
+}
+
+/* Displays black background an body which is retained in fullscreen mode triggered via fullscreen API */
+body::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #111;
+}
