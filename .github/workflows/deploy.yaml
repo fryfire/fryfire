@@ -20,10 +20,12 @@ jobs:
           run: npm run coverage
       - name: Create API documentation
         run: npm run doc
+      - name: Get branch name
+        uses: nelonoel/branch-name@v1
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: doc/api/
-          TARGET_FOLDER: api/${GITHUB_REF##*/}/
+          TARGET_FOLDER: api/${BRANCH_NAME}/
