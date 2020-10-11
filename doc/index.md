@@ -1,5 +1,5 @@
 Fryfire Documentation
 =====================
 
-* [Game](game)
-* [Lighting](lighting)
+* [Game](game.md)
+* [Lighting](lighting.md)
