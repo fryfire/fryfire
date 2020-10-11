@@ -7,7 +7,7 @@ import { Game } from "../Game";
 import { SceneNode, PostDrawHints } from "./SceneNode";
 import { Direction } from "../geom/Direction";
 import { Scene } from "./Scene";
-import { Timer } from "../Timer";
+import { Timer } from "../game/Timer";
 
 /**
  * Function signature for updating the root node. This function is exposed to the scene through the constructor so

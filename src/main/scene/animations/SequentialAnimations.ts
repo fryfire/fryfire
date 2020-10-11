@@ -3,7 +3,7 @@
  * See LICENSE.md for licensing information
  */
 
-import { Timer } from "../../Timer";
+import { Timer } from "../../game/Timer";
 import { Animation } from "./Animation";
 
 /**

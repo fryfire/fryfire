@@ -12,7 +12,7 @@ import { ControllerManager } from "./input/ControllerManager";
 import { GamepadInput } from "./input/GamepadInput";
 import { Keyboard } from "./input/Keyboard";
 import { Scenes } from "./scene/Scenes";
-import { Timer } from "./Timer";
+import { Timer, UpdateTimer } from "./game/Timer";
 
 /**
  * Game constructor arguments.
@@ -54,7 +54,8 @@ export abstract class Game {
     private readonly ctx: CanvasRenderingContext2D;
     private readonly gameLoopCallback = this.gameLoop.bind(this);
     private gameLoopId: number | null = null;
-    private readonly timer = new Timer();
+    private updateTimer!: UpdateTimer;
+    private readonly timer: Timer;
 
     /**
      * Creates a new game with the given arguments.
@@ -69,6 +70,7 @@ export abstract class Game {
         this.size = size;
         this.pixelated = pixelated;
         this.backgroundColor = typeof backgroundColor === "string" ? backgroundColor : backgroundColor.toRGBA().toCSS();
+        this.timer = new Timer(update => { this.updateTimer = update; });
 
         // Desynchronized sounds like a good idea but unfortunately it prevents pixelated graphics
         // on some systems (Chrome+Windows+NVidia for example which forces bilinear filtering). So
@@ -175,7 +177,8 @@ export abstract class Game {
      * The game loop method which is executed for each frame. It updates the game and then renders it.
      */
     private gameLoop(currentUpdateTime: number): void {
-        const timer = this.timer.update(currentUpdateTime);
+        this.updateTimer(currentUpdateTime);
+        const timer = this.timer;
         this.gameLoopId = requestAnimationFrame(this.gameLoopCallback);
         this.gamepad.update();
         this.scenes.update(timer);

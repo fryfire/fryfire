@@ -6,7 +6,7 @@
 import { Sound } from "../assets/Sound";
 import { Game, } from "../Game";
 import { Vector2 } from "../graphics/Vector2";
-import { Timer } from "../Timer";
+import { Timer } from "../game/Timer";
 import { SceneNode, SceneNodeArgs, SceneNodeAspect } from "./SceneNode";
 
 /**

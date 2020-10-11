@@ -6,7 +6,7 @@
 import { Game } from "fryfire/Game";
 import { Size } from "fryfire/geom/Size";
 import { translateToHalfPixel } from "fryfire/graphics/canvas";
-import { Timer } from "fryfire/Timer";
+import { Timer } from "fryfire/game/Timer";
 import { expose, isDev } from "fryfire/util/env";
 
 /**
@@ -18,7 +18,7 @@ class DemoGame extends Game {
 
     protected update(timer: Timer): void {
         // Increase rotation 0.5 RAD per second
-        this.rotation += 0.5 * timer.gameDelta;
+        this.rotation += 0.5 * timer.getGameDelta();
     }
 
     protected draw(ctx: CanvasRenderingContext2D, width: number, height: number) {

@@ -3,7 +3,7 @@
  * See LICENSE.md for licensing information
  */
 
-import { Timer } from "../../Timer";
+import { Timer } from "../../game/Timer";
 import { Easing, linear } from "../../util/easings";
 import { Animation } from "./Animation";
 
@@ -91,7 +91,7 @@ export class Animator<T extends unknown = unknown> implements Animation<T> {
     /** @inheritDoc */
     public update(target: T, timer: Timer): boolean {
         if (!this.canceled) {
-            this.elapsed += this.useAppTime ? timer.appDelta : timer.gameDelta;
+            this.elapsed += this.useAppTime ? timer.getAppDelta() : timer.getGameDelta();
             if (this.elapsed < this.lifetime) {
                 if (this.elapsed > this.delay) {
                     const timeIndex = ((this.elapsed - this.delay) / this.duration) % 1;

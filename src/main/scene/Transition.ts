@@ -5,7 +5,7 @@
 
 import { clamp } from "../util/math";
 import { Easing, linear } from "../util/easings";
-import { Timer } from "../Timer";
+import { Timer } from "../game/Timer";
 
 export type TransitionType = "in" | "out";
 
@@ -45,7 +45,7 @@ export class Transition {
 
     public update(timer: Timer): void {
         if (this.promise != null) {
-            this.elapsed += timer.appDelta;
+            this.elapsed += timer.getAppDelta();
             if (this.elapsed - this.delay >= this.duration) {
                 this.stop();
             }

@@ -14,7 +14,7 @@ import { Camera } from "./Camera";
 import { Signal } from "../util/Signal";
 import { ScenePointerMoveEvent } from "./events/ScenePointerMoveEvent";
 import { ScenePointerDownEvent } from "./events/ScenePointerDownEvent";
-import { Timer } from "../Timer";
+import { Timer } from "../game/Timer";
 import { createCanvas, getRenderingContext } from "../graphics/canvas";
 
 /**

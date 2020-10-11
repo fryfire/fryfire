@@ -3,7 +3,7 @@
  * See LICENSE.md for licensing information
  */
 
-import { Timer } from "../../Timer";
+import { Timer } from "../../game/Timer";
 
 /**
  * Interface for animation classes which can animate an arbitrary target and provides a mechanism to finish the

@@ -4,7 +4,7 @@
  */
 
 import { Game } from "../Game";
-import { Timer } from "../Timer";
+import { Timer } from "../game/Timer";
 import { TextNode } from "./TextNode";
 
 export class FpsCounterNode<T extends Game> extends TextNode<T> {
@@ -13,9 +13,9 @@ export class FpsCounterNode<T extends Game> extends TextNode<T> {
 
     public update(timer: Timer) {
         super.update(timer);
-        if (this.lastUpdate + 1 < timer.appTime) {
+        if (this.lastUpdate + 1 < timer.getAppTime()) {
             this.setText(`${this.frameCounter} FPS`);
-            this.lastUpdate = timer.appTime;
+            this.lastUpdate = timer.getAppTime();
             this.frameCounter = 0;
         }
         this.frameCounter++;

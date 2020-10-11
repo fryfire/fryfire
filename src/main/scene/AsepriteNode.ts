@@ -7,7 +7,7 @@ import { Aseprite } from "../assets/Aseprite";
 import { Game } from "../Game";
 import { Rect } from "../geom/Rect";
 import { Polygon2 } from "../graphics/Polygon2";
-import { Timer } from "../Timer";
+import { Timer } from "../game/Timer";
 import { SceneNode, SceneNodeArgs, SceneNodeAspect } from "./SceneNode";
 
 /**
@@ -155,7 +155,7 @@ export class AsepriteNode<T extends Game = Game> extends SceneNode<T> {
 
     /** @inheritDoc */
     public update(timer: Timer) {
-        this.time += this.useAppTime ? timer.appDelta : timer.gameDelta;
+        this.time += this.useAppTime ? timer.getAppDelta() : timer.getGameDelta();
     }
 
     /** @inheritDoc */

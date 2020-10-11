@@ -3,6 +3,8 @@
  * See LICENSE.md for licensing information
  */
 
+import { expose } from "./env";
+
 const { PI, cos, sin } = Math;
 
 export type Easing = (t: number) => number;
@@ -202,3 +204,37 @@ export function easeInOutBounce(t: number): number {
         return easeOutBounce(t * 2 - 1) / 2 + 0.5;
     }
 }
+
+expose("fryfire.easings", {
+    linear,
+    easeInSine,
+    easeOutSine,
+    easeInOutSine,
+    easeInQuad,
+    easeOutQuad,
+    easeInOutQuad,
+    easeInCubic,
+    easeOutCubic,
+    easeInOutCubic,
+    easeInQuart,
+    easeOutQuart,
+    easeInOutQuart,
+    easeInQuint,
+    easeOutQuint,
+    easeInOutQuint,
+    easeInExpo,
+    easeOutExpo,
+    easeInOutExpo,
+    easeInCirc,
+    easeOutCirc,
+    easeInOutCirc,
+    easeInBack,
+    easeOutBack,
+    easeInOutBack,
+    easeInElastic,
+    easeOutElastic,
+    easeInOutElastic,
+    easeOutBounce,
+    easeInBounce,
+    easeInOutBounce
+});

@@ -6,7 +6,7 @@ import { createCanvas, getRenderingContext } from "../../main/graphics/canvas";
 import { Vector2 } from "../../main/graphics/Vector2";
 import { Scene } from "../../main/scene/Scene";
 import { SceneNodeArgs, SceneNode, SceneNodeAspect } from "../../main/scene/SceneNode";
-import { Timer } from "../../main/Timer";
+import { Timer } from "../../main/game/Timer";
 
 class TestGame extends Game {
 }

@@ -15,7 +15,7 @@ import { ReadonlyVector2Like } from "../graphics/Vector2";
 import { Rect } from "../geom/Rect";
 import { clamp } from "../util/math";
 import { Scene } from "./Scene";
-import { Timer } from "../Timer";
+import { Timer } from "../game/Timer";
 
 /** Camera target type. Can be a simple position object, a scene node or a function which returns a camera target. */
 export type CameraTarget = ReadonlyVector2Like | SceneNode | (() => CameraTarget);

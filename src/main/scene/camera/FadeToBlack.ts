@@ -3,7 +3,7 @@
  * See LICENSE.md for licensing information
  */
 
-import { Timer } from "../../Timer";
+import { Timer } from "../../game/Timer";
 
 export class FadeToBlack {
     private color: string = "black";
@@ -51,7 +51,7 @@ export class FadeToBlack {
             } else {
                 this.current = Math.max(this.target, this.source + delta);
             }
-            this.time += timer.appDelta;
+            this.time += timer.getAppDelta();
         } else if (this.promiseResolve != null) {
             this.promise = null;
             this.promiseResolve();

@@ -4,7 +4,7 @@
  */
 
 import { Game } from "../Game";
-import { Timer } from "../Timer";
+import { Timer } from "../game/Timer";
 import { Constructor } from "../util/types";
 import { Scene, SceneConstructor } from "./Scene";
 

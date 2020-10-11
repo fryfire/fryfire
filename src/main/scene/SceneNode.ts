@@ -14,7 +14,7 @@ import { Animation } from "./animations/Animation";
 import { Size2 } from "../graphics/Size2";
 import { Constructor } from "../util/types";
 import { TiledObject } from "../tiled/TiledObject";
-import { Timer } from "../Timer";
+import { Timer } from "../game/Timer";
 
 /**
  * Hints which are returned to the scene after drawing the scene graph. These hints can suggest further actions after

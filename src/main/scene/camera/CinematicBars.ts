@@ -3,7 +3,7 @@
  * See LICENSE.md for licensing information
  */
 
-import { Timer } from "../../Timer";
+import { Timer } from "../../game/Timer";
 
 export class CinematicBars {
     private time: number = 0;
@@ -41,7 +41,7 @@ export class CinematicBars {
             } else {
                 this.current = Math.max(this.target, this.source + delta);
             }
-            this.time += timer.appDelta;
+            this.time += timer.getAppDelta();
         }
     }
 
