@@ -16,6 +16,7 @@
         "/coverage/",
         "/package-lock.json",
         "/.git/",
+        "/doc/api/",
         "/.github/",
         "/lib/",
         "*.log",
