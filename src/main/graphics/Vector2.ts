@@ -3,6 +3,7 @@
  * See LICENSE.md for licensing information
  */
 
+import { expose } from "../util/env";
 import { ReadonlyAffineTransform } from "./AffineTransform";
 
 /**
@@ -86,6 +87,7 @@ export interface ReadonlyVector2 extends ReadonlyVector2Like {
 /**
  * Vector with two floating point components.
  */
+@expose("fryfire.Vector2")
 export class Vector2 implements ReadonlyVector2Like, Vector2Like {
     /**
      * Creates a new vector with all components set to 0.

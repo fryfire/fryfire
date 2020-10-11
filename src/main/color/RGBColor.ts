@@ -1,4 +1,4 @@
-import { isLittleEndian } from "../util/env";
+import { expose, isLittleEndian } from "../util/env";
 
 import { clamp } from "../util/math";
 import { formatNumber, toHex } from "../util/string";
@@ -15,6 +15,7 @@ const RGBColorCSSRegExp = /^\s*rgb\s*\(\s*([+-]?\d*(?:\.\d+)?(?:e[+-]?\d+)?%?)\s
 /**
  * Immutable color with red, green and blue component.
  */
+@expose("fryfire.RGBColor")
 export class RGBColor implements Color {
     /** The red color component (0.0 - 1.0) */
     private readonly red: number;

@@ -44,7 +44,7 @@ export class Timer {
      */
     public update(time: number): this {
         time = time / 1000;
-        const delta = clamp(time - this.lastTime, 0, MAX_DT);
+        const delta = clamp(time - this.lastTime, 0, MAX_DT) * this.speed;
         this.lastTime = time;
         this.appDelta = delta;
         this.appTime += delta;

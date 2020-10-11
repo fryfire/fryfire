@@ -7,7 +7,9 @@ import { Line2 } from "./Line2";
 import { ReadonlyVector2Like } from "./Vector2";
 import { Polygon2 } from "./Polygon2";
 import { Rect } from "../geom/Rect";
+import { expose } from "../util/env";
 
+@expose("fryfire.Bounds2")
 export class Bounds2 {
     public minX: number = Infinity;
     public maxX: number = -Infinity;

@@ -1,4 +1,4 @@
-import { isLittleEndian } from "../util/env";
+import { expose, isLittleEndian } from "../util/env";
 import { clamp } from "../util/math";
 import { formatNumber } from "../util/string";
 import { WritableArrayLike } from "../util/types";
@@ -14,6 +14,7 @@ const RGBAColorCSSRegExp = /^\s*rgba\s*\(\s*([+-]?\d*(?:\.\d+)?(?:e[+-]?\d+)?%?)
 /**
  * Immutable color with red, green, blue and alpha component.
  */
+@expose("fryfire.RGBAColor")
 export class RGBAColor implements Color {
     /** The red color component (0.0 - 1.0) */
     private readonly red: number;

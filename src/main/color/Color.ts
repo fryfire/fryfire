@@ -1,3 +1,4 @@
+import { expose } from "../util/env";
 import { namedColors } from "./colors";
 import { RGBAColor } from "./RGBAColor";
 import { RGBColor } from "./RGBColor";
@@ -77,3 +78,5 @@ export namespace Color {
         return Color.fromString(json);
     }
 }
+
+expose("fryfire.Color", Color);

@@ -7,7 +7,7 @@ import { Game } from "fryfire/Game";
 import { Size } from "fryfire/geom/Size";
 import { translateToHalfPixel } from "fryfire/graphics/canvas";
 import { Timer } from "fryfire/Timer";
-import { isDev } from "fryfire/util/env";
+import { expose, isDev } from "fryfire/util/env";
 
 /**
  * This demo shows how to use Fryfire without any scenes by simply overwriting the update/draw methods of the game
@@ -54,4 +54,4 @@ class DemoGame extends Game {
 }
 
 // Instantiate and start the game
-new DemoGame({ size: new Size(384, 216) }).start();
+expose("game", new DemoGame({ size: new Size(384, 216) }).start());

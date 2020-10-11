@@ -8,10 +8,12 @@ import { ReadonlyVector2, Vector2 } from "./Vector2";
 import { ReadonlyAffineTransform } from "./AffineTransform";
 import { Bounds2 } from "./Bounds2";
 import { Rect } from "../geom/Rect";
+import { expose } from "../util/env";
 
 /**
  * A polygon with any number of vertices.
  */
+@expose("fryfire.Polygon2")
 export class Polygon2 {
     public readonly vertices: Vector2[];
     public readonly edges: Line2[] = [];

@@ -3,6 +3,8 @@
  * See LICENSE.md for licensing information
  */
 
+import { expose } from "../util/env";
+
 /**
  * Minimal interface of a 2D size.
  */
@@ -55,6 +57,7 @@ export interface ReadonlySize2 extends ReadonlySize2Like {
 /**
  * Mutable 2D size.
  */
+@expose("fryfire.Size2")
 export class Size2 implements ReadonlySize2Like, Size2Like {
     /**
      * Creates a new size with all dimensions set to 0.

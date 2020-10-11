@@ -6,6 +6,7 @@
 import { Comparable } from "../lang/Comparable";
 import { Equatable, isEqual } from "../lang/Equatable";
 import { Serializable } from "../lang/Serializable";
+import { expose } from "../util/env";
 import { IllegalArgumentException } from "../util/exception";
 import { formatNumber } from "../util/string";
 import { InsetsLike } from "./InsetsLike";
@@ -20,6 +21,7 @@ export interface SizeJSON {
 /**
  * Immutable container for a size with a width and height component.
  */
+@expose("fryfire.Size")
 export class Size implements SizeLike, Serializable<SizeJSON>, Equatable, Comparable<Size> {
     /**
      * Creates new insets.

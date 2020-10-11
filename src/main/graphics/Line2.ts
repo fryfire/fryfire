@@ -3,11 +3,13 @@
  * See LICENSE.md for licensing information
  */
 
+import { expose } from "../util/env";
 import { ReadonlyVector2, Vector2 } from "./Vector2";
 
 /**
  * A line connecting two vertices.
  */
+@expose("fryfire.Line2")
 export class Line2 {
     private normal: Vector2 | null = null;
     private center: Vector2 | null = null;

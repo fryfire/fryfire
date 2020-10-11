@@ -5,6 +5,7 @@
 
 import { Equatable, isEqual } from "../lang/Equatable";
 import { Serializable } from "../lang/Serializable";
+import { expose } from "../util/env";
 import { IllegalArgumentException } from "../util/exception";
 import { formatNumber } from "../util/string";
 import { InsetsLike } from "./InsetsLike";
@@ -28,6 +29,7 @@ export interface InsetsJSON {
  * This type can be used for paddings, margins, borders, nine-patch split coordinates and so on. The parameter order
  * of the constructor and various methods use CSS order (clock-wise starting at top: top, right, bottom, left).
  */
+@expose("fryfire.Insets")
 export class Insets implements InsetsLike, Serializable<InsetsJSON>, Equatable {
     /**
      * Creates new insets.

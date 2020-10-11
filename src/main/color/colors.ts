@@ -1,3 +1,4 @@
+import { expose } from "../util/env";
 import { Color } from "./Color";
 import { RGBColor } from "./RGBColor";
 
@@ -153,3 +154,5 @@ export const namedColors: Record<string, Color> = {
     "yellow": RGBColor.fromUint32(0xff00ffff, true),
     "yellowgreen": RGBColor.fromUint32(0xff32cd9a, true)
 };
+
+expose("fryfire.namedColors", namedColors);

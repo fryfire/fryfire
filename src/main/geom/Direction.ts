@@ -3,6 +3,7 @@
  * See LICENSE.md for licensing information
  */
 
+import { expose } from "../util/env";
 import { IllegalArgumentException } from "../util/exception";
 import { toLowerDashCase, toUpperSnakeCase } from "../util/string";
 
@@ -185,3 +186,5 @@ export namespace Direction {
         return isTop(direction) ? -1 : isBottom(direction) ? 1 : 0;
     }
 }
+
+expose("fryfire.Direction", Direction);

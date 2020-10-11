@@ -6,6 +6,7 @@
 import { Equatable, isEqual } from "../lang/Equatable";
 import { Serializable } from "../lang/Serializable";
 import { cacheResult } from "../util/cache";
+import { expose } from "../util/env";
 import { IllegalArgumentException } from "../util/exception";
 import { formatNumber } from "../util/string";
 import { Direction } from "./Direction";
@@ -66,6 +67,7 @@ function normalizeRect(x: number, y: number, width: number, height: number, anch
 /**
  * Immutable rectangle with a position and size.
  */
+@expose("fryfire.Rect")
 export class Rect implements RectLike, SizeLike, Serializable<RectJSON>, Equatable, PointLike {
     /** Rectangle constant for position x=0,y=0 with empty size. */
     public static readonly NULL = new Rect(0, 0, 0, 0);

@@ -3,6 +3,8 @@
  * See LICENSE.md for licensing information
  */
 
+import { expose } from "../util/env";
+
 /**
  * Readonly interface for [[AffineTransform]].
  */
@@ -114,6 +116,7 @@ export interface ReadonlyAffineTransform {
  * Affine transformation matrix. It behaves like a 3x3 matrix where the third row is always assumed to be 0 0 1.
  * This matrix is useful for 2D transformations and is compatible to the transformations done in a Canvas for example.
  */
+@expose("fryfire.AffineTransform")
 export class AffineTransform implements ReadonlyAffineTransform {
     /**
      * Creates a matrix initialized to an identity matrix.

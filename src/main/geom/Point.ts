@@ -5,6 +5,7 @@
 
 import { Equatable, isEqual } from "../lang/Equatable";
 import { Serializable } from "../lang/Serializable";
+import { expose } from "../util/env";
 import { IllegalArgumentException } from "../util/exception";
 import { formatNumber } from "../util/string";
 import { PointLike } from "./PointLike";
@@ -23,6 +24,7 @@ export interface PointJSON {
 /**
  * Immutable 2D point with an X and Y position.
  */
+@expose("fryfire.Point")
 export class Point implements PointLike, Serializable<PointJSON>, Equatable {
     /** Point constant for position x=0,y=0 */
     public static readonly NULL = new Point(0, 0);
