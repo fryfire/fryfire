@@ -55,3 +55,31 @@ Game parameters
 * **size** - Optional physical game size. When set then the canvas uses this exact size and aspect ratio but is still scaled up (by CSS) to fill as much of the screen as possible. When not specified then the physical size is dynamically calculated from the window size and device pixel ratio.
 * **pixelated** - Set this to true for a pixelated game. Image smoothing and image rendering is configured accordingly to this setting. Default is true when a fixed game size is specified, false if not.
 * **backgroundColor** - The background color. Defaults to black. Before a frame is rendered the canvas is filled with this color.
+
+Game loop
+---------
+
+The game class itself provides an update and draw method which you can override in your game class to implement a very basic game loop. It is recommended to use scenes and scene nodes instead as explained later but in case you don't need all this you can also write a basic game by only using the game class.
+
+```typescript
+class MyGame extends Game {
+    protected update(timer: Timer): void {
+        ...
+    }
+
+    protected draw(ctx: CanvasRenderingContext2D, width: number, height: number): void {
+        ...
+    }
+}
+```
+
+The update method is responsible for updating your game state according to the given [Timer] object which contains the app and game time and time deltas between the current and last call of the update method.
+
+The draw method is responsible for rendering a single frame onto the given canvas context. The game width and height in pixels is also passed for convenience to the draw method.
+
+See also
+--------
+
+* [Timer]
+
+[Timer]: ./timer.md
