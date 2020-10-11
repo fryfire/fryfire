@@ -31,3 +31,4 @@ jobs:
           BRANCH: gh-pages
           FOLDER: doc/api/
           TARGET_FOLDER: api/${{ env.BRANCH_NAME }}/
+          CLEAN: true
