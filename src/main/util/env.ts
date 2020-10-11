@@ -16,6 +16,43 @@ const globalScope = (
 
 export { globalScope as global };
 
+/**
+ * Exposes the given value under the given name in the global scope.
+ *
+ * @param name  - The expose name. Can be a dot-separated path to expose as object properties.
+ * @param value - The value to expose.
+ */
+export function expose(name: string, value: unknown): void;
+
+/**
+ * Exposes a class under the given name in the global scope.
+ *
+ * @param name  - The expose name. Can be a dot-separated path to expose as object properties.
+ */
+export function expose(name: string): ClassDecorator;
+
+export function expose(name: string, object?: unknown): ClassDecorator | void {
+    if (object == null) {
+        return (target) => {
+            expose(name, target);
+        };
+    } else {
+        let parent: Record<string, unknown> = globalScope;
+        const parts = name.split(".");
+        for (let i = 0, max = parts.length - 1; i <= max; i++) {
+            const partName = parts[i];
+            if (i < max) {
+                if (parent[partName] == null) {
+                    parent[partName] = {};
+                }
+                parent = parent[partName] as Record<string, unknown>;
+            } else {
+                parent[partName] = object;
+            }
+        }
+    }
+}
+
 /** Cached result of [[isLittleEndian]] function */
 let littleEndian: boolean | null = null;
 
