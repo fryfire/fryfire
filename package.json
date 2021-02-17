@@ -35,7 +35,7 @@
     "check": "jest",
     "cspell": "cspell '**/*'",
     "coverage": "jest --coverage",
-    "doc": "typedoc --excludeNotExported --excludePrivate --mode file --includes doc --out doc/api src/main src/typings ../../node_modules/**/*.d.ts",
+    "doc": "typedoc --excludePrivate --includes doc --out doc/api --tsconfig tsconfig.json src/main src/typings",
     "test": "npm run -s cspell && npm run -s lint && npm run -s check",
     "compile": "tsc",
     "watch": "tsc -w",
