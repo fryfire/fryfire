@@ -10,7 +10,7 @@ export function now(): number {
 }
 
 export async function sleep(ms = 0): Promise<void> {
-    await new Promise((resolve) => {
+    await new Promise<void>((resolve) => {
         setTimeout(() => resolve(), ms);
     });
 }

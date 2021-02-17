@@ -13,7 +13,7 @@ export class FadeToBlack {
     private current: number = 0;
     private duration: number = 0.5;
     private promise: Promise<this> | null = null;
-    private promiseResolve: (() => void) | null = null;
+    private promiseResolve: ((value: this) => void) | null = null;
 
     private move(target: number, duration: number): Promise<this> {
         if (this.promise == null) {
@@ -54,7 +54,7 @@ export class FadeToBlack {
             this.time += timer.getAppDelta();
         } else if (this.promiseResolve != null) {
             this.promise = null;
-            this.promiseResolve();
+            this.promiseResolve(this);
             this.promiseResolve = null;
         }
     }
