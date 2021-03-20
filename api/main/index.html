@@ -81,6 +81,9 @@
 						<a href="modules/direction.html">Direction</a>
 					</li>
 					<li class=" tsd-kind-namespace">
+						<a href="modules/gamecontrollerstyle.html">Game<wbr>Controller<wbr>Style</a>
+					</li>
+					<li class=" tsd-kind-namespace">
 						<a href="modules/tiledlayer.html">Tiled<wbr>Layer</a>
 					</li>
 				</ul>
@@ -88,25 +91,16 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum">
-						<a href="enums/controlleranimationtags.html" class="tsd-kind-icon">Controller<wbr>Animation<wbr>Tags</a>
-					</li>
-					<li class=" tsd-kind-enum">
-						<a href="enums/controllereventtype.html" class="tsd-kind-icon">Controller<wbr>Event<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-enum">
-						<a href="enums/controllerfamily.html" class="tsd-kind-icon">Controller<wbr>Family</a>
-					</li>
-					<li class=" tsd-kind-enum">
-						<a href="enums/controllerintent.html" class="tsd-kind-icon">Controller<wbr>Intent</a>
-					</li>
-					<li class=" tsd-kind-enum">
-						<a href="enums/controllerspritemap.html" class="tsd-kind-icon">Controller<wbr>Sprite<wbr>Map</a>
-					</li>
-					<li class=" tsd-kind-enum">
 						<a href="enums/direction.html" class="tsd-kind-icon">Direction</a>
 					</li>
 					<li class=" tsd-kind-enum">
-						<a href="enums/gamepadstyle.html" class="tsd-kind-icon">Gamepad<wbr>Style</a>
+						<a href="enums/gamecontrollerstyle.html" class="tsd-kind-icon">Game<wbr>Controller<wbr>Style</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/gamepadaxis.html" class="tsd-kind-icon">Gamepad<wbr>Axis</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/gamepadbutton.html" class="tsd-kind-icon">Gamepad<wbr>Button</a>
 					</li>
 					<li class=" tsd-kind-enum">
 						<a href="enums/postdrawhints.html" class="tsd-kind-icon">Post<wbr>Draw<wbr>Hints</a>
@@ -145,12 +139,6 @@
 						<a href="classes/cinematicbars.html" class="tsd-kind-icon">Cinematic<wbr>Bars</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="classes/controllerevent.html" class="tsd-kind-icon">Controller<wbr>Event</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="classes/controllermanager.html" class="tsd-kind-icon">Controller<wbr>Manager</a>
-					</li>
-					<li class=" tsd-kind-class">
 						<a href="classes/curtaintransition.html" class="tsd-kind-icon">Curtain<wbr>Transition</a>
 					</li>
 					<li class=" tsd-kind-class tsd-has-type-parameter">
@@ -172,13 +160,16 @@
 						<a href="classes/game.html" class="tsd-kind-icon">Game</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="classes/gamepadcontrollerevent.html" class="tsd-kind-icon">Gamepad<wbr>Controller<wbr>Event</a>
+						<a href="classes/gamecontroller.html" class="tsd-kind-icon">Game<wbr>Controller</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="classes/gamepadinput.html" class="tsd-kind-icon">Gamepad<wbr>Input</a>
+						<a href="classes/gamecontrolleraxis.html" class="tsd-kind-icon">Game<wbr>Controller<wbr>Axis</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="classes/gamepadmodel.html" class="tsd-kind-icon">Gamepad<wbr>Model</a>
+						<a href="classes/gamecontrollerbutton.html" class="tsd-kind-icon">Game<wbr>Controller<wbr>Button</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/gamecontrollermodel.html" class="tsd-kind-icon">Game<wbr>Controller<wbr>Model</a>
 					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/ioexception.html" class="tsd-kind-icon">IOException</a>
@@ -504,8 +495,11 @@
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#updatetimer" class="tsd-kind-icon">Update<wbr>Timer</a>
 					</li>
-					<li class=" tsd-kind-variable">
-						<a href="modules.html#default_gamepad_model" class="tsd-kind-icon">DEFAULT_<wbr>GAMEPAD_<wbr>MODEL</a>
+					<li class=" tsd-kind-event">
+						<a href="modules.html#ongamecontrollerconnect" class="tsd-kind-icon">on<wbr>Game<wbr>Controller<wbr>Connect</a>
+					</li>
+					<li class=" tsd-kind-event">
+						<a href="modules.html#ongamecontrollerdisconnect" class="tsd-kind-icon">on<wbr>Game<wbr>Controller<wbr>Disconnect</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="modules.html#global" class="tsd-kind-icon">global</a>
@@ -658,6 +652,9 @@
 						<a href="modules.html#getaudiocontext" class="tsd-kind-icon">get<wbr>Audio<wbr>Context</a>
 					</li>
 					<li class=" tsd-kind-function">
+						<a href="modules.html#getgamecontrollers" class="tsd-kind-icon">get<wbr>Game<wbr>Controllers</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="modules.html#getglobalgainnode" class="tsd-kind-icon">get<wbr>Global<wbr>Gain<wbr>Node</a>
 					</li>
 					<li class=" tsd-kind-function">
@@ -806,6 +803,9 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="modules.html#translatetohalfpixel" class="tsd-kind-icon">translate<wbr>ToHalf<wbr>Pixel</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#updategamecontrollers" class="tsd-kind-icon">update<wbr>Game<wbr>Controllers</a>
 					</li>
 				</ul>
 			</nav>

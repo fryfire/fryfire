@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>GamepadStyle | fryfire</title>
+	<title>GamepadAxis | fryfire</title>
 	<meta name="description" content="Documentation for fryfire">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -53,10 +53,10 @@
 					<a href="../modules.html">fryfire</a>
 				</li>
 				<li>
-					<a href="gamepadstyle.html">GamepadStyle</a>
+					<a href="gamepadaxis.html">GamepadAxis</a>
 				</li>
 			</ul>
-			<h1>Enumeration GamepadStyle</h1>
+			<h1>Enumeration GamepadAxis</h1>
 		</div>
 	</div>
 </header>
@@ -66,11 +66,9 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Enumeration of the different gamepad styles.</p>
+						<p>The standard gamepad axes. Only applies to controllers which are recognized as standard gamepad controllers.</p>
 					</div>
-					<p>Mainly used to adjust button mappings to offer the best possible <em>expected</em> gaming
-						experience and to make sure that graphics are displayed in-game that match the
-					controller being used.</p>
+					<p>See <a href="https://w3c.github.io/gamepad/#dfn-standard-gamepad-layout">https://w3c.github.io/gamepad/#dfn-standard-gamepad-layout</a></p>
 				</div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -80,10 +78,10 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="gamepadstyle.html#playstation" class="tsd-kind-icon">PLAYSTATION</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="gamepadstyle.html#stadia" class="tsd-kind-icon">STADIA</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="gamepadstyle.html#unknown" class="tsd-kind-icon">UNKNOWN</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="gamepadstyle.html#xbox" class="tsd-kind-icon">XBOX</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="gamepadaxis.html#left_x" class="tsd-kind-icon">LEFT_<wbr>X</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="gamepadaxis.html#left_y" class="tsd-kind-icon">LEFT_<wbr>Y</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="gamepadaxis.html#right_x" class="tsd-kind-icon">RIGHT_<wbr>X</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="gamepadaxis.html#right_y" class="tsd-kind-icon">RIGHT_<wbr>Y</a></li>
 							</ul>
 						</section>
 					</div>
@@ -92,49 +90,64 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="playstation" class="tsd-anchor"></a>
-					<h3>PLAYSTATION</h3>
-					<div class="tsd-signature tsd-kind-icon">PLAYSTATION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;playstation&quot;</span></div>
+					<a name="left_x" class="tsd-anchor"></a>
+					<h3>LEFT_<wbr>X</h3>
+					<div class="tsd-signature tsd-kind-icon">LEFT_<wbr>X<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/feaf482/src/main/input/GamepadStyle.ts#L19">input/GamepadStyle.ts:19</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="stadia" class="tsd-anchor"></a>
-					<h3>STADIA</h3>
-					<div class="tsd-signature tsd-kind-icon">STADIA<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;stadia&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/feaf482/src/main/input/GamepadStyle.ts#L20">input/GamepadStyle.ts:20</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="unknown" class="tsd-anchor"></a>
-					<h3>UNKNOWN</h3>
-					<div class="tsd-signature tsd-kind-icon">UNKNOWN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;unknown&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/feaf482/src/main/input/GamepadStyle.ts#L16">input/GamepadStyle.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/controller/GamepadAxis.ts#L13">controller/GamepadAxis.ts:13</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Default gamepad type if nothing else matches.</p>
+							<p>Horizontal axis for left stick (negative left/positive right)</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="xbox" class="tsd-anchor"></a>
-					<h3>XBOX</h3>
-					<div class="tsd-signature tsd-kind-icon">XBOX<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;xbox&quot;</span></div>
+					<a name="left_y" class="tsd-anchor"></a>
+					<h3>LEFT_<wbr>Y</h3>
+					<div class="tsd-signature tsd-kind-icon">LEFT_<wbr>Y<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/feaf482/src/main/input/GamepadStyle.ts#L18">input/GamepadStyle.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/controller/GamepadAxis.ts#L16">controller/GamepadAxis.ts:16</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Vertical axis for left stick (negative up/positive down)</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="right_x" class="tsd-anchor"></a>
+					<h3>RIGHT_<wbr>X</h3>
+					<div class="tsd-signature tsd-kind-icon">RIGHT_<wbr>X<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 2</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/controller/GamepadAxis.ts#L19">controller/GamepadAxis.ts:19</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Horizontal axis for right stick (negative left/positive right)</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="right_y" class="tsd-anchor"></a>
+					<h3>RIGHT_<wbr>Y</h3>
+					<div class="tsd-signature tsd-kind-icon">RIGHT_<wbr>Y<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 3</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/controller/GamepadAxis.ts#L22">controller/GamepadAxis.ts:22</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Vertical axis for right stick (negative up/positive down)</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -151,19 +164,19 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-enum">
-						<a href="gamepadstyle.html" class="tsd-kind-icon">Gamepad<wbr>Style</a>
+						<a href="gamepadaxis.html" class="tsd-kind-icon">Gamepad<wbr>Axis</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="gamepadstyle.html#playstation" class="tsd-kind-icon">PLAYSTATION</a>
+								<a href="gamepadaxis.html#left_x" class="tsd-kind-icon">LEFT_<wbr>X</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="gamepadstyle.html#stadia" class="tsd-kind-icon">STADIA</a>
+								<a href="gamepadaxis.html#left_y" class="tsd-kind-icon">LEFT_<wbr>Y</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="gamepadstyle.html#unknown" class="tsd-kind-icon">UNKNOWN</a>
+								<a href="gamepadaxis.html#right_x" class="tsd-kind-icon">RIGHT_<wbr>X</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="gamepadstyle.html#xbox" class="tsd-kind-icon">XBOX</a>
+								<a href="gamepadaxis.html#right_y" class="tsd-kind-icon">RIGHT_<wbr>Y</a>
 							</li>
 						</ul>
 					</li>

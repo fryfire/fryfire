@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Line2 | fryfire</title>
+	<title>GameControllerAxis | fryfire</title>
 	<meta name="description" content="Documentation for fryfire">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -53,10 +53,10 @@
 					<a href="../modules.html">fryfire</a>
 				</li>
 				<li>
-					<a href="line2.html">Line2</a>
+					<a href="gamecontrolleraxis.html">GameControllerAxis</a>
 				</li>
 			</ul>
-			<h1>Class Line2</h1>
+			<h1>Class GameControllerAxis</h1>
 		</div>
 	</div>
 </header>
@@ -66,7 +66,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A line connecting two vertices.</p>
+						<p>A single axis on a specific game controller.</p>
 					</div>
 				</div>
 			</section>
@@ -74,7 +74,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Line2</span>
+						<span class="target">GameControllerAxis</span>
 					</li>
 				</ul>
 			</section>
@@ -85,23 +85,23 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="line2.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="gamecontrolleraxis.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Events</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="line2.html#end" class="tsd-kind-icon">end</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="line2.html#start" class="tsd-kind-icon">start</a></li>
+								<li class="tsd-kind-event tsd-parent-kind-class"><a href="gamecontrolleraxis.html#onchange" class="tsd-kind-icon">on<wbr>Change</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="line2.html#draw" class="tsd-kind-icon">draw</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="line2.html#drawnormal" class="tsd-kind-icon">draw<wbr>Normal</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="line2.html#getcenter" class="tsd-kind-icon">get<wbr>Center</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="line2.html#getnormal" class="tsd-kind-icon">get<wbr>Normal</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="gamecontrolleraxis.html#getcontroller" class="tsd-kind-icon">get<wbr>Controller</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="gamecontrolleraxis.html#getindex" class="tsd-kind-icon">get<wbr>Index</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="gamecontrolleraxis.html#getvalue" class="tsd-kind-icon">get<wbr>Value</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="gamecontrolleraxis.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="gamecontrolleraxis.html#update" class="tsd-kind-icon">update</a></li>
 							</ul>
 						</section>
 					</div>
@@ -113,173 +113,163 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Line2<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><a href="vector2.html" class="tsd-signature-type" data-tsd-kind="Class">Vector2</a>, end<span class="tsd-signature-symbol">: </span><a href="vector2.html" class="tsd-signature-type" data-tsd-kind="Class">Vector2</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="line2.html" class="tsd-signature-type" data-tsd-kind="Class">Line2</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Game<wbr>Controller<wbr>Axis<span class="tsd-signature-symbol">(</span>controller<span class="tsd-signature-symbol">: </span><a href="gamecontroller.html" class="tsd-signature-type" data-tsd-kind="Class">GameController</a>, axisIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="gamecontrolleraxis.html" class="tsd-signature-type" data-tsd-kind="Class">GameControllerAxis</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/Line2.ts#L15">graphics/Line2.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/controller/GameControllerAxis.ts#L22">controller/GameControllerAxis.ts:22</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a new line from vertex a to vertex b.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>start: <a href="vector2.html" class="tsd-signature-type" data-tsd-kind="Class">Vector2</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The start of the line.</p>
-									</div>
+									<h5>controller: <a href="gamecontroller.html" class="tsd-signature-type" data-tsd-kind="Class">GameController</a></h5>
 								</li>
 								<li>
-									<h5>end: <a href="vector2.html" class="tsd-signature-type" data-tsd-kind="Class">Vector2</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The end of the line.</p>
-									</div>
+									<h5>axisIndex: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="line2.html" class="tsd-signature-type" data-tsd-kind="Class">Line2</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="gamecontrolleraxis.html" class="tsd-signature-type" data-tsd-kind="Class">GameControllerAxis</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="end" class="tsd-anchor"></a>
-					<h3>end</h3>
-					<div class="tsd-signature tsd-kind-icon">end<span class="tsd-signature-symbol">:</span> <a href="vector2.html" class="tsd-signature-type" data-tsd-kind="Class">Vector2</a></div>
+				<h2>Events</h2>
+				<section class="tsd-panel tsd-member tsd-kind-event tsd-parent-kind-class">
+					<a name="onchange" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Change</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Change<span class="tsd-signature-symbol">:</span> <a href="signal.html" class="tsd-signature-type" data-tsd-kind="Class">Signal</a><span class="tsd-signature-symbol">&lt;</span><a href="gamecontrolleraxis.html" class="tsd-signature-type" data-tsd-kind="Class">GameControllerAxis</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/controller/GameControllerAxis.ts#L18">controller/GameControllerAxis.ts:18</a></li>
+						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="start" class="tsd-anchor"></a>
-					<h3>start</h3>
-					<div class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">:</span> <a href="vector2.html" class="tsd-signature-type" data-tsd-kind="Class">Vector2</a></div>
-					<aside class="tsd-sources">
-					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Emitted when the axis state has changed.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="draw" class="tsd-anchor"></a>
-					<h3>draw</h3>
+					<a name="getcontroller" class="tsd-anchor"></a>
+					<h3>get<wbr>Controller</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">draw<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CanvasRenderingContext2D</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="line2.html" class="tsd-signature-type" data-tsd-kind="Class">Line2</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Controller<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="gamecontroller.html" class="tsd-signature-type" data-tsd-kind="Class">GameController</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/Line2.ts#L59">graphics/Line2.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/controller/GameControllerAxis.ts#L38">controller/GameControllerAxis.ts:38</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Draws the line to the given 2D canvas rendering context. This only applies the line geometry,
-									you have to stroke it yourself.</p>
+									<p>Returns the controller this axis belongs to.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="gamecontroller.html" class="tsd-signature-type" data-tsd-kind="Class">GameController</a></h4>
+							<p>The controller.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getindex" class="tsd-anchor"></a>
+					<h3>get<wbr>Index</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Index<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/controller/GameControllerAxis.ts#L47">controller/GameControllerAxis.ts:47</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the index of the axis.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The axis index.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getvalue" class="tsd-anchor"></a>
+					<h3>get<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Value<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/controller/GameControllerAxis.ts#L56">controller/GameControllerAxis.ts:56</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the current axis value.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The current axis value (Range from -1.0 to 1.0).</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tostring" class="tsd-anchor"></a>
+					<h3>to<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/controller/GameControllerAxis.ts#L29">controller/GameControllerAxis.ts:29</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="update" class="tsd-anchor"></a>
+					<h3>update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/controller/GameControllerAxis.ts#L65">controller/GameControllerAxis.ts:65</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Updates the state from the specified W3C gamepad axis value.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>ctx: <span class="tsd-signature-type">CanvasRenderingContext2D</span></h5>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The canvas rendering context.</p>
+										<p>The current value of the W3C gamepad axis.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="line2.html" class="tsd-signature-type" data-tsd-kind="Class">Line2</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="drawnormal" class="tsd-anchor"></a>
-					<h3>draw<wbr>Normal</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">draw<wbr>Normal<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CanvasRenderingContext2D</span>, len<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="line2.html" class="tsd-signature-type" data-tsd-kind="Class">Line2</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/Line2.ts#L73">graphics/Line2.ts:73</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Draws the line normal to the given 2D canvas rendering context. This only applies the line geometry,
-									you have to stroke it yourself.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>ctx: <span class="tsd-signature-type">CanvasRenderingContext2D</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The canvas rendering context.</p>
-									</div>
-								</li>
-								<li>
-									<h5>len: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 25</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Optional custom normal line length.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="line2.html" class="tsd-signature-type" data-tsd-kind="Class">Line2</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getcenter" class="tsd-anchor"></a>
-					<h3>get<wbr>Center</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Center<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/readonlyvector2.html" class="tsd-signature-type" data-tsd-kind="Interface">ReadonlyVector2</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/Line2.ts#L46">graphics/Line2.ts:46</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns the center of the line.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/readonlyvector2.html" class="tsd-signature-type" data-tsd-kind="Interface">ReadonlyVector2</a></h4>
-							<p>The center of the line.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getnormal" class="tsd-anchor"></a>
-					<h3>get<wbr>Normal</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Normal<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/readonlyvector2.html" class="tsd-signature-type" data-tsd-kind="Interface">ReadonlyVector2</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/Line2.ts#L34">graphics/Line2.ts:34</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns the normal of the line. For a line in a clock-wise polygon this normal points to the outside of the
-									polygon.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/readonlyvector2.html" class="tsd-signature-type" data-tsd-kind="Interface">ReadonlyVector2</a></h4>
-							<p>The line normal. Normalized to a unit vector.</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -298,28 +288,28 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class">
-						<a href="line2.html" class="tsd-kind-icon">Line2</a>
+						<a href="gamecontrolleraxis.html" class="tsd-kind-icon">Game<wbr>Controller<wbr>Axis</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="line2.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="gamecontrolleraxis.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="line2.html#end" class="tsd-kind-icon">end</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="line2.html#start" class="tsd-kind-icon">start</a>
+							<li class=" tsd-kind-event tsd-parent-kind-class">
+								<a href="gamecontrolleraxis.html#onchange" class="tsd-kind-icon">on<wbr>Change</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="line2.html#draw" class="tsd-kind-icon">draw</a>
+								<a href="gamecontrolleraxis.html#getcontroller" class="tsd-kind-icon">get<wbr>Controller</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="line2.html#drawnormal" class="tsd-kind-icon">draw<wbr>Normal</a>
+								<a href="gamecontrolleraxis.html#getindex" class="tsd-kind-icon">get<wbr>Index</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="line2.html#getcenter" class="tsd-kind-icon">get<wbr>Center</a>
+								<a href="gamecontrolleraxis.html#getvalue" class="tsd-kind-icon">get<wbr>Value</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="line2.html#getnormal" class="tsd-kind-icon">get<wbr>Normal</a>
+								<a href="gamecontrolleraxis.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="gamecontrolleraxis.html#update" class="tsd-kind-icon">update</a>
 							</li>
 						</ul>
 					</li>
