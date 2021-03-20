@@ -10,8 +10,8 @@ import { Size } from "../geom/Size";
 import { createCanvas, getRenderingContext } from "../graphics/canvas";
 import { ControllerManager } from "../input/ControllerManager";
 import { GamepadInput } from "../input/GamepadInput";
-import { Keyboard } from "../input/Keyboard";
 import { Scenes } from "../scene/Scenes";
+import { signal, Signal } from "../util/Signal";
 import { Timer, UpdateTimer } from "./Timer";
 
 /**
@@ -42,8 +42,31 @@ export type ImageRendering = "auto" | "smooth" | "high-quality" | "crisp-edges" 
  * access to the game instance so this is a good place to put some global game logic.
  */
 export abstract class Game {
+    /**
+     * Signal emitted when user presses down a key.
+     *
+     * @event
+     */
+    @signal(Game.prototype.initKeyDown)
+    public readonly onKeyDown!: Signal<KeyboardEvent>;
+
+    /**
+     * Signal emitted when user releases a key.
+     *
+     * @event
+     */
+    @signal(Game.prototype.initKeyUp)
+    public readonly onKeyUp!: Signal<KeyboardEvent>;
+
+    /**
+     * Signal emitted when user types (presses and releases) a key.
+     *
+     * @event
+     */
+    @signal(Game.prototype.initKeyPress)
+    public readonly onKeyPress!: Signal<KeyboardEvent>;
+
     public readonly controllerManager = ControllerManager.getInstance();
-    public readonly keyboard = new Keyboard();
     public readonly gamepad = new GamepadInput();
     public readonly scenes = new Scenes(this);
     public readonly assets = new Assets();
@@ -115,6 +138,30 @@ export abstract class Game {
                 }
             }
         });
+    }
+
+    private initKeyDown(signal: Signal<KeyboardEvent>): () => void {
+        const listener = signal.emit.bind(signal);
+        document.addEventListener("keydown", listener);
+        return () => {
+            document.removeEventListener("keydown", listener);
+        };
+    }
+
+    private initKeyUp(signal: Signal<KeyboardEvent>): () => void {
+        const listener = signal.emit.bind(signal);
+        document.addEventListener("keyup", listener);
+        return () => {
+            document.removeEventListener("keyup", listener);
+        };
+    }
+
+    private initKeyPress(signal: Signal<KeyboardEvent>): () => void {
+        const listener = signal.emit.bind(signal);
+        document.addEventListener("keypress", listener);
+        return () => {
+            document.removeEventListener("keypress", listener);
+        };
     }
 
     /**

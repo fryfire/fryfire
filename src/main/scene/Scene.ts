@@ -5,7 +5,6 @@
 
 import { ControllerManager } from "../input/ControllerManager";
 import { Game } from "../game/Game";
-import { Keyboard } from "../input/Keyboard";
 import { Scenes } from "./Scenes";
 import { Transition } from "./Transition";
 import { UpdateRootNode, DrawRootNode, RootNode } from "./RootNode";
@@ -59,10 +58,6 @@ export abstract class Scene<T extends Game = Game, A = void> {
         });
         this.rootNode.resizeTo(this.game.getWidth(), this.game.getHeight());
         this.camera = new Camera(this);
-    }
-
-    public get keyboard(): Keyboard {
-        return this.game.keyboard;
     }
 
     public get input(): ControllerManager {

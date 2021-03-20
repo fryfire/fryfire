@@ -3,6 +3,36 @@
  * See LICENSE.md for licensing information
  */
 
+import { MatchingKeys } from "./types";
+
+/**
+ * Decorator for initializing a decorator on-demand. The signal is automatically created the first time someone
+ * accesses it.
+ *
+ * @param onInit - Optional initialization function which is called when the first slot is connected to the signal.
+ *                 This function can return an optional deinitialization function which is called after the last
+ *                 slot has been disconnected.
+ */
+export function signal<V>(onInit?: (signal: Signal<V>) => (() => void) | void):
+        <T>(target: T, name: MatchingKeys<T, Signal<V>>) => void {
+    return <T>(target: T, name: MatchingKeys<T, Signal<V>>): void => {
+        Object.defineProperty(target, name, {
+            configurable: false,
+            enumerable: true,
+            get(this: object): Signal<V> {
+                const signal = new Signal(onInit?.bind(this));
+                Object.defineProperty(this, name, {
+                    configurable: false,
+                    writable: false,
+                    enumerable: true,
+                    value: signal
+                });
+                return signal;
+            }
+        });
+    };
+}
+
 /**
  * Internally used container for a slot (A callback function with a calling context).
  */

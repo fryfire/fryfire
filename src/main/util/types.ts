@@ -51,3 +51,12 @@ export interface WritableArrayLike<T> extends ArrayLike<T> {
     [n: number]: T;
     readonly length: number;
 }
+
+/**
+ * This type can be used to filter all property keys from an object to keys referencing a property having the given
+ * value type.
+ *
+ * @param T - The object type.
+ * @param V - The value type to filter for.
+ */
+export type MatchingKeys<T, V> = { [K in keyof T]-?: V extends T[K] ? K : never }[keyof T];

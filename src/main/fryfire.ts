@@ -13,6 +13,7 @@ export * from "./color/RGBAColor";
 export * from "./color/RGBColor";
 export * from "./color/colors";
 
+export * from "./game/Game";
 export * from "./game/Timer";
 
 export * from "./geom/Direction";
@@ -43,7 +44,6 @@ export * from "./input/ControllerManager";
 export * from "./input/GamepadInput";
 export * from "./input/GamepadModel";
 export * from "./input/GamepadStyle";
-export * from "./input/Keyboard";
 
 export * from "./lang/Comparable";
 export * from "./lang/Deserializable";
@@ -109,5 +109,3 @@ export * from "./util/random";
 export * from "./util/string";
 export * from "./util/time";
 export * from "./util/types";
-
-export * from "./game/Game";
