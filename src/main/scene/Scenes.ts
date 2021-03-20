@@ -3,7 +3,7 @@
  * See LICENSE.md for licensing information
  */
 
-import { Game } from "../Game";
+import { Game } from "../game/Game";
 import { Timer } from "../game/Timer";
 import { Constructor } from "../util/types";
 import { Scene, SceneConstructor } from "./Scene";

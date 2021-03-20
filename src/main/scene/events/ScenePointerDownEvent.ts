@@ -3,7 +3,7 @@
  * See LICENSE.md for licensing information
  */
 
-import { Game } from "../../Game";
+import { Game } from "../../game/Game";
 import { Signal } from "../../util/Signal";
 import { ScenePointerEvent } from "./ScenePointerEvent";
 import { ScenePointerMoveEvent } from "./ScenePointerMoveEvent";

@@ -3,16 +3,16 @@
  * See LICENSE.md for licensing information
  */
 
-import { Assets } from "./assets/Assets";
-import { Color } from "./color/Color";
-import { RGBColor } from "./color/RGBColor";
-import { Size } from "./geom/Size";
-import { createCanvas, getRenderingContext } from "./graphics/canvas";
-import { ControllerManager } from "./input/ControllerManager";
-import { GamepadInput } from "./input/GamepadInput";
-import { Keyboard } from "./input/Keyboard";
-import { Scenes } from "./scene/Scenes";
-import { Timer, UpdateTimer } from "./game/Timer";
+import { Assets } from "../assets/Assets";
+import { Color } from "../color/Color";
+import { RGBColor } from "../color/RGBColor";
+import { Size } from "../geom/Size";
+import { createCanvas, getRenderingContext } from "../graphics/canvas";
+import { ControllerManager } from "../input/ControllerManager";
+import { GamepadInput } from "../input/GamepadInput";
+import { Keyboard } from "../input/Keyboard";
+import { Scenes } from "../scene/Scenes";
+import { Timer, UpdateTimer } from "./Timer";
 
 /**
  * Game constructor arguments.

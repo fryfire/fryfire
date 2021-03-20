@@ -3,7 +3,7 @@
  * See LICENSE.md for licensing information
  */
 
-import { Game } from "../Game";
+import { Game } from "../game/Game";
 import { Direction } from "../geom/Direction";
 import { TiledMap } from "../tiled/TiledMap";
 import { TiledObject } from "../tiled/TiledObject";

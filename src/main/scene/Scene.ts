@@ -4,7 +4,7 @@
  */
 
 import { ControllerManager } from "../input/ControllerManager";
-import { Game } from "../Game";
+import { Game } from "../game/Game";
 import { Keyboard } from "../input/Keyboard";
 import { Scenes } from "./Scenes";
 import { Transition } from "./Transition";

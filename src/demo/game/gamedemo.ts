@@ -3,7 +3,7 @@
  * See LICENSE.md for licensing information
  */
 
-import { Game } from "fryfire/Game";
+import { Game } from "fryfire/game/Game";
 import { Size } from "fryfire/geom/Size";
 import { translateToHalfPixel } from "fryfire/graphics/canvas";
 import { Timer } from "fryfire/game/Timer";

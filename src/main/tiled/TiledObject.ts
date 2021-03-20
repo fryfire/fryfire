@@ -3,15 +3,11 @@
  * See LICENSE.md for licensing information
  */
 
-import type { TiledLayerJSON, TiledObjectGroupLayerJSON, TiledObjectJSON } from "*.tiledmap.json";
+import type { TiledObjectJSON } from "*.tiledmap.json";
 import { Polygon2 } from "../graphics/Polygon2";
 import { Vector2 } from "../graphics/Vector2";
 import { cacheResult } from "../util/cache";
 import { TiledProperties } from "./TiledProperties";
-
-export function isTiledObjectGroupLayerJSON(json: TiledLayerJSON): json is TiledObjectGroupLayerJSON {
-    return json.type === "objectgroup";
-}
 
 export class TiledObject extends TiledProperties<TiledObjectJSON> {
     public toJSON(): TiledObjectJSON {

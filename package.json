@@ -24,6 +24,7 @@
       "lib": "./lib/main"
     }
   },
+  "main": "./lib/main/fryfire.js",
   "exports": {
     "./": "./lib/main/"
   },
@@ -35,7 +36,7 @@
     "check": "jest",
     "cspell": "cspell '**/*'",
     "coverage": "jest --coverage",
-    "doc": "typedoc --excludePrivate --includes doc --out doc/api --tsconfig tsconfig.json src/main src/typings",
+    "doc": "typedoc --excludePrivate --excludeExternals --includes doc --out doc/api --tsconfig tsconfig.json src/main/fryfire.ts",
     "test": "npm run -s cspell && npm run -s lint && npm run -s check",
     "compile": "tsc",
     "watch": "tsc -w",
@@ -46,22 +47,22 @@
     "@types/base64-js": "1.3.0",
     "@types/jest": "26.0.20",
     "@types/pako": "1.0.1",
-    "@typescript-eslint/eslint-plugin": "4.15.1",
-    "@typescript-eslint/parser": "4.15.1",
-    "copy-webpack-plugin": "7.0.0",
-    "cspell": "5.2.4",
-    "electron": "11.2.3",
-    "eslint": "7.20.0",
+    "@typescript-eslint/eslint-plugin": "4.18.0",
+    "@typescript-eslint/parser": "4.18.0",
+    "copy-webpack-plugin": "8.0.0",
+    "cspell": "5.3.7",
+    "electron": "^11.2.3",
+    "eslint": "7.22.0",
     "jest": "26.6.3",
     "jest-extended": "0.11.5",
     "jest-sonar-reporter": "2.0.0",
     "markdownlint": "0.23.1",
-    "markdownlint-cli": "0.26.0",
+    "markdownlint-cli": "0.27.1",
     "rimraf": "3.0.2",
     "source-map-loader": "2.0.1",
     "steal": "2.2.4",
-    "typedoc": "0.20.25",
-    "typescript": "4.1.5"
+    "typedoc": "0.20.32",
+    "typescript": "4.2.3"
   },
   "dependencies": {
     "base64-js": "^1.5.1",

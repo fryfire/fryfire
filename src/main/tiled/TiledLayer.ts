@@ -8,8 +8,7 @@ import { TiledLayerJSON, TiledLayerType, TiledPropertyType } from "*.tiledmap.js
 import { AbstractTiledLayer } from "./AbstractTiledLayer";
 import { isTiledGroupLayerJSON, TiledGroupLayer } from "./TiledGroupLayer";
 import { isTiledImageLayerJSON, TiledImageLayer } from "./TiledImageLayer";
-import { isTiledObjectGroupLayerJSON } from "./TiledObject";
-import { TiledObjectGroupLayer } from "./TiledObjectGroupLayer";
+import { isTiledObjectGroupLayerJSON, TiledObjectGroupLayer } from "./TiledObjectGroupLayer";
 import { TiledProperty } from "./TiledProperty";
 import { isTiledTileLayerJSON, TiledTileLayer } from "./TiledTileLayer";
 

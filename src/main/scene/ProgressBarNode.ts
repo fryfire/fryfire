@@ -3,7 +3,7 @@
  * See LICENSE.md for licensing information
  */
 
-import { Game } from "../Game";
+import { Game } from "../game/Game";
 import { SceneNode, SceneNodeArgs, SceneNodeAspect } from "./SceneNode";
 import { clamp } from "../util/math";
 

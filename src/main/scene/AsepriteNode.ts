@@ -4,7 +4,7 @@
  */
 
 import { Aseprite } from "../assets/Aseprite";
-import { Game } from "../Game";
+import { Game } from "../game/Game";
 import { Rect } from "../geom/Rect";
 import { Polygon2 } from "../graphics/Polygon2";
 import { Timer } from "../game/Timer";

@@ -3,7 +3,7 @@
  * See LICENSE.md for licensing information
  */
 
-import { Game } from "../../Game";
+import { Game } from "../../game/Game";
 import { ReadonlyVector2, Vector2 } from "../../graphics/Vector2";
 import { Scene } from "../Scene";
 

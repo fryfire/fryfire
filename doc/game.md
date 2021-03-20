@@ -26,7 +26,7 @@ new MyGame({
 }).start();
 ```
 
-If you want to have your own constructor then you can either simply pass these parameters to the super constructor from your constructor or you can extend the `GameArgs` type to add more custom properties. This is concept used throughout the whole engine for scene nodes for example. So it is a good idea to get familiar with it:
+If you want to have your own constructor then you can either simply pass these parameters to the super constructor from your constructor or you can extend the `GameArgs` type to add more custom properties. This concept is used throughout the whole engine for scene nodes for example. So it is a good idea to get familiar with it:
 
 ```typescript
 import { GameArgs } from "fryfire/lib/main/Game";

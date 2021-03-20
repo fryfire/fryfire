@@ -58,7 +58,7 @@ export class Timer {
      * Returns the time the application runs so far in seconds. This time is not affected by game speed or pause/resume
      * and therefor ideal for updating the game UI for example.
      *
-     * @return The application time.
+     * @return The application time in seconds.
      */
     public getAppTime(): number {
         return this.appTime;
@@ -68,7 +68,7 @@ export class Timer {
      * Returns the time the game runs so far in seconds. This time is affected by game speed and pause/resume
      * and therefor ideal for updating the game state.
      *
-     * @return The game time.
+     * @return The game time in seconds.
      */
     public getGameTime(): number {
         return this.gameTime;
@@ -78,7 +78,7 @@ export class Timer {
      * Returns the application time delta since the last update. This time is not affected by game speed or pause/resume
      * and therefor ideal for updating the game UI for example.
      *
-     * @return The application time delta since last update.
+     * @return The application time delta since last update in seconds.
      */
     public getAppDelta(): number {
         return this.appDelta;
@@ -88,7 +88,7 @@ export class Timer {
      * Returns the game time delta since the last update. This time is affected by game speed and pause/resume
      * and therefor ideal for updating the game state.
      *
-     * @return The game time delta since last update.
+     * @return The game time delta in since last update in seconds.
      */
     public getGameDelta(): number {
         return this.gameDelta;

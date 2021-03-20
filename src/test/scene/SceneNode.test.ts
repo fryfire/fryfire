@@ -1,5 +1,5 @@
 import "jest-extended";
-import { Game } from "../../main/Game";
+import { Game } from "../../main/game/Game";
 import { Direction } from "../../main/geom/Direction";
 import { AffineTransform } from "../../main/graphics/AffineTransform";
 import { createCanvas, getRenderingContext } from "../../main/graphics/canvas";

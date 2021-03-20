@@ -4,7 +4,7 @@
  */
 
 import { AffineTransform, ReadonlyAffineTransform } from "../graphics/AffineTransform";
-import { Game } from "../Game";
+import { Game } from "../game/Game";
 import { SceneNode } from "./SceneNode";
 import { easeInOutQuad } from "../util/easings";
 import { Animation } from "./animations/Animation";

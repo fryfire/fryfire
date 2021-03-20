@@ -4,7 +4,7 @@
  */
 
 import { Scene } from "./Scene";
-import { Game } from "../Game";
+import { Game } from "../game/Game";
 import { Direction } from "../geom/Direction";
 import { AffineTransform, ReadonlyAffineTransform } from "../graphics/AffineTransform";
 import { Polygon2 } from "../graphics/Polygon2";
