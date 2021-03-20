@@ -127,6 +127,15 @@ export abstract class Game {
     }
 
     /**
+     * Returns the timer used by the game to update game state.
+     *
+     * @return The timer.
+     */
+    public getTimer(): Timer {
+        return this.timer;
+    }
+
+    /**
      * Returns the game width which is the same as the canvas width in pixels.
      *
      * @return The game width in pixels.
@@ -238,5 +247,14 @@ export abstract class Game {
             this.gameLoopId = null;
         }
         return this;
+    }
+
+    /**
+     * Checks if game is running.
+     *
+     * @return True if game is running, false if not.
+     */
+    public isRunning(): boolean {
+        return this.gameLoopId != null;
     }
 }

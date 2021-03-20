@@ -144,15 +144,16 @@ export class Timer {
      */
     private update(time: number): void {
         time = time / 1000;
-        const delta = clamp(time - this.lastTime, 0, MAX_DT) * this.speed;
+        const appDelta = clamp(time - this.lastTime, 0, MAX_DT);
         this.lastTime = time;
-        this.appDelta = delta;
-        this.appTime += delta;
+        this.appDelta = appDelta;
+        this.appTime += appDelta;
         if (this.paused) {
             this.gameDelta = 0;
         } else {
-            this.gameDelta = delta;
-            this.gameTime += delta;
+            const gameDelta = appDelta * this.speed;
+            this.gameDelta = gameDelta;
+            this.gameTime += gameDelta;
         }
     }
 }
