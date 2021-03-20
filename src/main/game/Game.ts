@@ -6,10 +6,9 @@
 import { Assets } from "../assets/Assets";
 import { Color } from "../color/Color";
 import { RGBColor } from "../color/RGBColor";
+import { updateGameControllers } from "../controller/GameControllers";
 import { Size } from "../geom/Size";
 import { createCanvas, getRenderingContext } from "../graphics/canvas";
-import { ControllerManager } from "../input/ControllerManager";
-import { GamepadInput } from "../input/GamepadInput";
 import { Scenes } from "../scene/Scenes";
 import { signal, Signal } from "../util/Signal";
 import { Timer, UpdateTimer } from "./Timer";
@@ -66,8 +65,6 @@ export abstract class Game {
     @signal(Game.prototype.initKeyPress)
     public readonly onKeyPress!: Signal<KeyboardEvent>;
 
-    public readonly controllerManager = ControllerManager.getInstance();
-    public readonly gamepad = new GamepadInput();
     public readonly scenes = new Scenes(this);
     public readonly assets = new Assets();
     private readonly size: Size | null;
@@ -200,10 +197,6 @@ export abstract class Game {
         return this.canvas.height;
     }
 
-    public get input(): ControllerManager {
-        return this.controllerManager;
-    }
-
     /**
      * Updates the canvas size according to the window size.
      */
@@ -236,7 +229,7 @@ export abstract class Game {
         this.updateTimer(currentUpdateTime);
         const timer = this.timer;
         this.gameLoopId = requestAnimationFrame(this.gameLoopCallback);
-        this.gamepad.update();
+        updateGameControllers();
         this.scenes.update(timer);
         this.update(timer);
 

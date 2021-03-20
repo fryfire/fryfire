@@ -13,6 +13,15 @@ export * from "./color/RGBAColor";
 export * from "./color/RGBColor";
 export * from "./color/colors";
 
+export * from "./controller/GameController";
+export * from "./controller/GameControllerAxis";
+export * from "./controller/GameControllerButton";
+export * from "./controller/GameControllerModel";
+export * from "./controller/GameControllers";
+export * from "./controller/GameControllerStyle";
+export * from "./controller/GamepadAxis";
+export * from "./controller/GamepadButton";
+
 export * from "./game/Game";
 export * from "./game/Timer";
 
@@ -34,16 +43,6 @@ export * from "./graphics/Size2";
 export * from "./graphics/Vector2";
 export * from "./graphics/canvas";
 export * from "./graphics/image";
-
-export * from "./input/ControllerEvent";
-export * from "./input/ControllerEventType";
-export * from "./input/ControllerFamily";
-export * from "./input/ControllerIntent";
-export * from "./input/ControllerManager";
-
-export * from "./input/GamepadInput";
-export * from "./input/GamepadModel";
-export * from "./input/GamepadStyle";
 
 export * from "./lang/Comparable";
 export * from "./lang/Deserializable";

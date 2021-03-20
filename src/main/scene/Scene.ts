@@ -3,7 +3,6 @@
  * See LICENSE.md for licensing information
  */
 
-import { ControllerManager } from "../input/ControllerManager";
 import { Game } from "../game/Game";
 import { Scenes } from "./Scenes";
 import { Transition } from "./Transition";
@@ -58,10 +57,6 @@ export abstract class Scene<T extends Game = Game, A = void> {
         });
         this.rootNode.resizeTo(this.game.getWidth(), this.game.getHeight());
         this.camera = new Camera(this);
-    }
-
-    public get input(): ControllerManager {
-        return ControllerManager.getInstance();
     }
 
     public get scenes(): Scenes<T> {
