@@ -82,6 +82,7 @@
 						<section class="tsd-index-section ">
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/abstractpointerevent.html" class="tsd-kind-icon">Abstract<wbr>Pointer<wbr>Event</a></li>
 								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/abstracttiledlayer.html" class="tsd-kind-icon">Abstract<wbr>Tiled<wbr>Layer</a></li>
 								<li class="tsd-kind-class"><a href="classes/affinetransform.html" class="tsd-kind-icon">Affine<wbr>Transform</a></li>
 								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/animator.html" class="tsd-kind-icon">Animator</a></li>
@@ -113,6 +114,9 @@
 								<li class="tsd-kind-class"><a href="classes/notfoundexception.html" class="tsd-kind-icon">Not<wbr>Found<wbr>Exception</a></li>
 								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/parallelanimations.html" class="tsd-kind-icon">Parallel<wbr>Animations</a></li>
 								<li class="tsd-kind-class"><a href="classes/point.html" class="tsd-kind-icon">Point</a></li>
+								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/pointerdownevent.html" class="tsd-kind-icon">Pointer<wbr>Down<wbr>Event</a></li>
+								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/pointerendevent.html" class="tsd-kind-icon">Pointer<wbr>End<wbr>Event</a></li>
+								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/pointermoveevent.html" class="tsd-kind-icon">Pointer<wbr>Move<wbr>Event</a></li>
 								<li class="tsd-kind-class"><a href="classes/polygon2.html" class="tsd-kind-icon">Polygon2</a></li>
 								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/progressbarnode.html" class="tsd-kind-icon">Progress<wbr>Bar<wbr>Node</a></li>
 								<li class="tsd-kind-class"><a href="classes/rgbacolor.html" class="tsd-kind-icon">RGBAColor</a></li>
@@ -122,10 +126,6 @@
 								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/scene.html" class="tsd-kind-icon">Scene</a></li>
 								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/scenenode.html" class="tsd-kind-icon">Scene<wbr>Node</a></li>
 								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/scenenodeanimation.html" class="tsd-kind-icon">Scene<wbr>Node<wbr>Animation</a></li>
-								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/scenepointerdownevent.html" class="tsd-kind-icon">Scene<wbr>Pointer<wbr>Down<wbr>Event</a></li>
-								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/scenepointerendevent.html" class="tsd-kind-icon">Scene<wbr>Pointer<wbr>End<wbr>Event</a></li>
-								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/scenepointerevent.html" class="tsd-kind-icon">Scene<wbr>Pointer<wbr>Event</a></li>
-								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/scenepointermoveevent.html" class="tsd-kind-icon">Scene<wbr>Pointer<wbr>Move<wbr>Event</a></li>
 								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/scenes.html" class="tsd-kind-icon">Scenes</a></li>
 								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/sequentialanimations.html" class="tsd-kind-icon">Sequential<wbr>Animations</a></li>
 								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/signal.html" class="tsd-kind-icon">Signal</a></li>
@@ -353,7 +353,7 @@
 					<div class="tsd-signature tsd-kind-icon">Animator<wbr>Function&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, elapsed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/scene/animations/Animator.ts#L33">scene/animations/Animator.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/scene/animations/Animator.ts#L33">scene/animations/Animator.ts:33</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -402,7 +402,7 @@
 					<div class="tsd-signature tsd-kind-icon">Camera<wbr>Target<span class="tsd-signature-symbol">:</span> <a href="interfaces/readonlyvector2like.html" class="tsd-signature-type" data-tsd-kind="Interface">ReadonlyVector2Like</a><span class="tsd-signature-symbol"> | </span><a href="classes/scenenode.html" class="tsd-signature-type" data-tsd-kind="Class">SceneNode</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="modules.html#cameratarget" class="tsd-signature-type" data-tsd-kind="Type alias">CameraTarget</a><span class="tsd-signature-symbol">)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/scene/Camera.ts#L21">scene/Camera.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/scene/Camera.ts#L21">scene/Camera.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -417,7 +417,7 @@
 					<div class="tsd-signature tsd-kind-icon">Class&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>prototype<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/types.ts#L21">util/types.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/types.ts#L21">util/types.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -444,7 +444,7 @@
 					<div class="tsd-signature tsd-kind-icon">Constructor&lt;T, A&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">new </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/types.ts#L12">util/types.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/types.ts#L12">util/types.ts:12</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -497,7 +497,7 @@
 					<div class="tsd-signature tsd-kind-icon">Curtain<wbr>Direction<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;horizontal&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;vertical&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/transitions/CurtainTransition.ts#L8">transitions/CurtainTransition.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/transitions/CurtainTransition.ts#L8">transitions/CurtainTransition.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -507,7 +507,7 @@
 					<div class="tsd-signature tsd-kind-icon">Draw<wbr>Root<wbr>Node<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CanvasRenderingContext2D</span>, layer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="enums/postdrawhints.html" class="tsd-signature-type" data-tsd-kind="Enumeration">PostDrawHints</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/scene/RootNode.ts#L21">scene/RootNode.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/scene/RootNode.ts#L21">scene/RootNode.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -552,7 +552,7 @@
 					<div class="tsd-signature tsd-kind-icon">Easing<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L10">util/easings.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L10">util/easings.ts:10</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -583,7 +583,7 @@
 					<div class="tsd-signature tsd-kind-icon">Image<wbr>Rendering<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;auto&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;smooth&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;high-quality&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;crisp-edges&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;pixelated&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/game/Game.ts#L37">game/Game.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/game/Game.ts#L39">game/Game.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -593,7 +593,7 @@
 					<div class="tsd-signature tsd-kind-icon">Immutable&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{</span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-symbol">[ </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol"> in </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">?: </span><a href="modules.html#immutable" class="tsd-signature-type" data-tsd-kind="Type alias">Immutable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/types.ts#L37">util/types.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/types.ts#L37">util/types.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -619,7 +619,7 @@
 					<div class="tsd-signature tsd-kind-icon">Matching<wbr>Keys&lt;T, V&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{</span><span class="tsd-signature-symbol">[ </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol"> in </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/types.ts#L62">util/types.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/types.ts#L62">util/types.ts:62</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -652,7 +652,7 @@
 					<div class="tsd-signature tsd-kind-icon">Mutable&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{</span><span class="tsd-signature-symbol">-readonly </span><span class="tsd-signature-symbol">[ </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol"> in </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">-?: </span><a href="modules.html#mutable" class="tsd-signature-type" data-tsd-kind="Type alias">Mutable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/types.ts#L28">util/types.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/types.ts#L28">util/types.ts:28</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -678,7 +678,7 @@
 					<div class="tsd-signature tsd-kind-icon">Scene<wbr>Constructor&lt;T, A&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">new </span><span class="tsd-signature-symbol">(</span>game<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="classes/scene.html" class="tsd-signature-type" data-tsd-kind="Class">Scene</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">A</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/scene/Scene.ts#L25">scene/Scene.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/scene/Scene.ts#L25">scene/Scene.ts:25</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -732,7 +732,7 @@
 					<div class="tsd-signature tsd-kind-icon">Scene<wbr>Node<wbr>Animator&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>sceneNode<span class="tsd-signature-symbol">: </span><a href="classes/scenenode.html" class="tsd-signature-type" data-tsd-kind="Class">SceneNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, elapsed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/scene/SceneNodeAnimation.ts#L14">scene/SceneNodeAnimation.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/scene/SceneNodeAnimation.ts#L14">scene/SceneNodeAnimation.ts:14</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -781,7 +781,7 @@
 					<div class="tsd-signature tsd-kind-icon">Slide<wbr>Direction<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;top&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;left&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;bottom&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;right&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/transitions/SlideTransition.ts#L8">transitions/SlideTransition.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/transitions/SlideTransition.ts#L8">transitions/SlideTransition.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -791,7 +791,7 @@
 					<div class="tsd-signature tsd-kind-icon">Tiled<wbr>Property<wbr>Value<wbr>Type&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-type">&quot;int&quot;</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-type">&quot;float&quot;</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-type">&quot;bool&quot;</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-type">&quot;color&quot;</span><span class="tsd-signature-symbol"> ? </span><a href="interfaces/color.html" class="tsd-signature-type" data-tsd-kind="Interface">Color</a><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/tiled/TiledProperty.ts#L9">tiled/TiledProperty.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/tiled/TiledProperty.ts#L9">tiled/TiledProperty.ts:9</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -807,7 +807,7 @@
 					<div class="tsd-signature tsd-kind-icon">Transition<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;in&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;out&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/scene/Transition.ts#L10">scene/Transition.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/scene/Transition.ts#L10">scene/Transition.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -817,7 +817,7 @@
 					<div class="tsd-signature tsd-kind-icon">Typed<wbr>Array<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Int8Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint8ClampedArray</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Int16Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint16Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Uint32Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Float32Array</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Float64Array</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/types.ts#L42">util/types.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/types.ts#L42">util/types.ts:42</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -832,7 +832,7 @@
 					<div class="tsd-signature tsd-kind-icon">Update<wbr>Root<wbr>Node<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>timer<span class="tsd-signature-symbol">: </span><a href="classes/timer.html" class="tsd-signature-type" data-tsd-kind="Class">Timer</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/scene/RootNode.ts#L16">scene/RootNode.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/scene/RootNode.ts#L16">scene/RootNode.ts:16</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -869,7 +869,7 @@
 					<div class="tsd-signature tsd-kind-icon">Update<wbr>Timer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/game/Timer.ts#L18">game/Timer.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/game/Timer.ts#L18">game/Timer.ts:18</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -909,7 +909,7 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Game<wbr>Controller<wbr>Connect<span class="tsd-signature-symbol">:</span> <a href="classes/signal.html" class="tsd-signature-type" data-tsd-kind="Class">Signal</a><span class="tsd-signature-symbol">&lt;</span><a href="classes/gamecontroller.html" class="tsd-signature-type" data-tsd-kind="Class">GameController</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/controller/GameControllers.ts#L21">controller/GameControllers.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/controller/GameControllers.ts#L21">controller/GameControllers.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -924,7 +924,7 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Game<wbr>Controller<wbr>Disconnect<span class="tsd-signature-symbol">:</span> <a href="classes/signal.html" class="tsd-signature-type" data-tsd-kind="Class">Signal</a><span class="tsd-signature-symbol">&lt;</span><a href="classes/gamecontroller.html" class="tsd-signature-type" data-tsd-kind="Class">GameController</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/controller/GameControllers.ts#L28">controller/GameControllers.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/controller/GameControllers.ts#L28">controller/GameControllers.ts:28</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -942,7 +942,7 @@
 					<div class="tsd-signature tsd-kind-icon">global<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Global</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Window</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/env.ts#L10">util/env.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/env.ts#L10">util/env.ts:10</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -958,7 +958,7 @@
 					<div class="tsd-signature tsd-kind-icon">named<wbr>Colors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="interfaces/color.html" class="tsd-signature-type" data-tsd-kind="Interface">Color</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/color/colors.ts#L8">color/colors.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/color/colors.ts#L8">color/colors.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -980,7 +980,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/canvas.ts#L42">graphics/canvas.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/canvas.ts#L42">graphics/canvas.ts:42</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1002,7 +1002,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/image.ts#L42">graphics/image.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/image.ts#L42">graphics/image.ts:42</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1024,7 +1024,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/canvas.ts#L60">graphics/canvas.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/canvas.ts#L60">graphics/canvas.ts:60</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1046,7 +1046,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/image.ts#L33">graphics/image.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/image.ts#L33">graphics/image.ts:33</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1068,7 +1068,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/canvas.ts#L51">graphics/canvas.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/canvas.ts#L51">graphics/canvas.ts:51</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1090,7 +1090,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/assets/Assets.ts#L37">assets/Assets.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/assets/Assets.ts#L37">assets/Assets.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1117,7 +1117,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/cache.ts#L13">util/cache.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/cache.ts#L13">util/cache.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1153,7 +1153,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/cache.ts#L13">util/cache.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/cache.ts#L13">util/cache.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1183,7 +1183,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/string.ts#L31">util/string.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/string.ts#L31">util/string.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1215,7 +1215,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/math.ts#L6">util/math.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/math.ts#L6">util/math.ts:6</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1244,7 +1244,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/lang/Comparable.ts#L37">lang/Comparable.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/lang/Comparable.ts#L37">lang/Comparable.ts:37</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1289,7 +1289,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/canvas.ts#L76">graphics/canvas.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/canvas.ts#L76">graphics/canvas.ts:76</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1309,7 +1309,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/canvas.ts#L77">graphics/canvas.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/canvas.ts#L77">graphics/canvas.ts:77</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1338,7 +1338,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/decorator.ts#L52">util/decorator.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/decorator.ts#L52">util/decorator.ts:52</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1416,7 +1416,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/decorator.ts#L101">util/decorator.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/decorator.ts#L101">util/decorator.ts:101</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1480,7 +1480,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/math.ts#L37">util/math.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/math.ts#L37">util/math.ts:37</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1512,7 +1512,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L134">util/easings.ts:134</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L134">util/easings.ts:134</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1535,7 +1535,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L196">util/easings.ts:196</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L196">util/easings.ts:196</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1558,7 +1558,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L118">util/easings.ts:118</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L118">util/easings.ts:118</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1581,7 +1581,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L44">util/easings.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L44">util/easings.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1604,7 +1604,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L150">util/easings.ts:150</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L150">util/easings.ts:150</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1627,7 +1627,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L92">util/easings.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L92">util/easings.ts:92</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1650,7 +1650,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L142">util/easings.ts:142</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L142">util/easings.ts:142</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1673,7 +1673,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L200">util/easings.ts:200</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L200">util/easings.ts:200</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1696,7 +1696,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L126">util/easings.ts:126</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L126">util/easings.ts:126</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1719,7 +1719,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L52">util/easings.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L52">util/easings.ts:52</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1742,7 +1742,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L170">util/easings.ts:170</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L170">util/easings.ts:170</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1765,7 +1765,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L104">util/easings.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L104">util/easings.ts:104</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1788,7 +1788,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L36">util/easings.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L36">util/easings.ts:36</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1811,7 +1811,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L68">util/easings.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L68">util/easings.ts:68</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1834,7 +1834,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L84">util/easings.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L84">util/easings.ts:84</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1857,7 +1857,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L24">util/easings.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L24">util/easings.ts:24</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1880,7 +1880,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L28">util/easings.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L28">util/easings.ts:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1903,7 +1903,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L60">util/easings.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L60">util/easings.ts:60</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1926,7 +1926,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L76">util/easings.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L76">util/easings.ts:76</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1949,7 +1949,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L16">util/easings.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L16">util/easings.ts:16</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1972,7 +1972,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L138">util/easings.ts:138</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L138">util/easings.ts:138</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1995,7 +1995,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L184">util/easings.ts:184</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L184">util/easings.ts:184</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2018,7 +2018,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L122">util/easings.ts:122</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L122">util/easings.ts:122</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2041,7 +2041,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L48">util/easings.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L48">util/easings.ts:48</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2064,7 +2064,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L160">util/easings.ts:160</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L160">util/easings.ts:160</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2087,7 +2087,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L97">util/easings.ts:97</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L97">util/easings.ts:97</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2110,7 +2110,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L32">util/easings.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L32">util/easings.ts:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2133,7 +2133,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L64">util/easings.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L64">util/easings.ts:64</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2156,7 +2156,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L80">util/easings.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L80">util/easings.ts:80</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2179,7 +2179,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L20">util/easings.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L20">util/easings.ts:20</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2203,7 +2203,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/env.ts#L25">util/env.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/env.ts#L25">util/env.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2231,7 +2231,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/env.ts#L32">util/env.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/env.ts#L32">util/env.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2262,7 +2262,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/string.ts#L21">util/string.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/string.ts#L21">util/string.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2295,7 +2295,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/string.ts#L110">util/string.ts:110</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/string.ts#L110">util/string.ts:110</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2335,7 +2335,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/assets/Sound.ts#L14">assets/Sound.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/assets/Sound.ts#L14">assets/Sound.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">AudioContext</span></h4>
@@ -2352,7 +2352,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/controller/GameControllers.ts#L60">controller/GameControllers.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/controller/GameControllers.ts#L60">controller/GameControllers.ts:60</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2375,7 +2375,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/assets/Sound.ts#L39">assets/Sound.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/assets/Sound.ts#L39">assets/Sound.ts:39</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">GainNode</span></h4>
@@ -2392,7 +2392,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/canvas.ts#L145">graphics/canvas.ts:145</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/canvas.ts#L145">graphics/canvas.ts:145</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2424,7 +2424,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/env.ts#L86">util/env.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/env.ts#L86">util/env.ts:86</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2464,7 +2464,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/canvas.ts#L101">graphics/canvas.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/canvas.ts#L101">graphics/canvas.ts:101</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2484,7 +2484,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/canvas.ts#L103">graphics/canvas.ts:103</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/canvas.ts#L103">graphics/canvas.ts:103</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2504,7 +2504,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/canvas.ts#L105">graphics/canvas.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/canvas.ts#L105">graphics/canvas.ts:105</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2524,7 +2524,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/canvas.ts#L107">graphics/canvas.ts:107</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/canvas.ts#L107">graphics/canvas.ts:107</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2544,7 +2544,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/canvas.ts#L109">graphics/canvas.ts:109</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/canvas.ts#L109">graphics/canvas.ts:109</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2564,7 +2564,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/canvas.ts#L111">graphics/canvas.ts:111</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/canvas.ts#L111">graphics/canvas.ts:111</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2584,7 +2584,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/canvas.ts#L113">graphics/canvas.ts:113</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/canvas.ts#L113">graphics/canvas.ts:113</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2604,7 +2604,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/canvas.ts#L115">graphics/canvas.ts:115</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/canvas.ts#L115">graphics/canvas.ts:115</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2624,7 +2624,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/canvas.ts#L116">graphics/canvas.ts:116</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/canvas.ts#L116">graphics/canvas.ts:116</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2653,7 +2653,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/exception.ts#L32">util/exception.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/exception.ts#L32">util/exception.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2685,7 +2685,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/canvas.ts#L17">graphics/canvas.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/canvas.ts#L17">graphics/canvas.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2708,7 +2708,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/image.ts#L25">graphics/image.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/image.ts#L25">graphics/image.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2731,7 +2731,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/canvas.ts#L35">graphics/canvas.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/canvas.ts#L35">graphics/canvas.ts:35</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2754,7 +2754,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/image.ts#L16">graphics/image.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/image.ts#L16">graphics/image.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2777,7 +2777,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/canvas.ts#L26">graphics/canvas.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/canvas.ts#L26">graphics/canvas.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2800,7 +2800,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/lang/Comparable.ts#L26">lang/Comparable.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/lang/Comparable.ts#L26">lang/Comparable.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2832,7 +2832,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/lang/Deserializable.ts#L22">lang/Deserializable.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/lang/Deserializable.ts#L22">lang/Deserializable.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2870,7 +2870,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/env.ts#L106">util/env.ts:106</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/env.ts#L106">util/env.ts:106</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2893,7 +2893,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/env.ts#L73">util/env.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/env.ts#L73">util/env.ts:73</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2916,7 +2916,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/lang/Equatable.ts#L42">lang/Equatable.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/lang/Equatable.ts#L42">lang/Equatable.ts:42</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2988,7 +2988,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/lang/Equatable.ts#L26">lang/Equatable.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/lang/Equatable.ts#L26">lang/Equatable.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3020,7 +3020,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/geom/InsetsLike.ts#L45">geom/InsetsLike.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/geom/InsetsLike.ts#L45">geom/InsetsLike.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3052,7 +3052,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/env.ts#L64">util/env.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/env.ts#L64">util/env.ts:64</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3075,7 +3075,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/canvas.ts#L72">graphics/canvas.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/canvas.ts#L72">graphics/canvas.ts:72</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3107,7 +3107,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/geom/PointLike.ts#L31">geom/PointLike.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/geom/PointLike.ts#L31">geom/PointLike.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3139,7 +3139,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/geom/RectLike.ts#L33">geom/RectLike.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/geom/RectLike.ts#L33">geom/RectLike.ts:33</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3168,7 +3168,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/lang/Serializable.ts#L24">lang/Serializable.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/lang/Serializable.ts#L24">lang/Serializable.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3200,7 +3200,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/geom/SizeLike.ts#L31">geom/SizeLike.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/geom/SizeLike.ts#L31">geom/SizeLike.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3232,7 +3232,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/tiled/TiledGroupLayer.ts#L10">tiled/TiledGroupLayer.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/tiled/TiledGroupLayer.ts#L10">tiled/TiledGroupLayer.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3255,7 +3255,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/tiled/TiledImageLayer.ts#L10">tiled/TiledImageLayer.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/tiled/TiledImageLayer.ts#L10">tiled/TiledImageLayer.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3278,7 +3278,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/tiled/TiledObjectGroupLayer.ts#L12">tiled/TiledObjectGroupLayer.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/tiled/TiledObjectGroupLayer.ts#L12">tiled/TiledObjectGroupLayer.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3301,7 +3301,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/tiled/TiledTileLayer.ts#L15">tiled/TiledTileLayer.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/tiled/TiledTileLayer.ts#L15">tiled/TiledTileLayer.ts:15</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3324,7 +3324,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/easings.ts#L12">util/easings.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/easings.ts#L12">util/easings.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3347,7 +3347,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/image.ts#L61">graphics/image.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/image.ts#L61">graphics/image.ts:61</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3385,7 +3385,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/math.ts#L58">util/math.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/math.ts#L58">util/math.ts:58</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3417,7 +3417,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/math.ts#L47">util/math.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/math.ts#L47">util/math.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3446,7 +3446,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/time.ts#L8">util/time.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/time.ts#L8">util/time.ts:8</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -3463,7 +3463,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/math.ts#L10">util/math.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/math.ts#L10">util/math.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3489,7 +3489,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/math.ts#L27">util/math.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/math.ts#L27">util/math.ts:27</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3521,7 +3521,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/random.ts#L6">util/random.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/random.ts#L6">util/random.ts:6</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3547,7 +3547,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/random.ts#L14">util/random.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/random.ts#L14">util/random.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3573,7 +3573,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/random.ts#L22">util/random.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/random.ts#L22">util/random.ts:22</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3596,7 +3596,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/array.ts#L12">util/array.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/array.ts#L12">util/array.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3634,7 +3634,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/Signal.ts#L16">util/Signal.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/Signal.ts#L16">util/Signal.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3719,7 +3719,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/time.ts#L12">util/time.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/time.ts#L12">util/time.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3742,7 +3742,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/random.ts#L28">util/random.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/random.ts#L28">util/random.ts:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3768,7 +3768,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/string.ts#L129">util/string.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/string.ts#L129">util/string.ts:129</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3806,7 +3806,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/string.ts#L87">util/string.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/string.ts#L87">util/string.ts:87</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3838,7 +3838,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/string.ts#L67">util/string.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/string.ts#L67">util/string.ts:67</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3870,7 +3870,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/string.ts#L57">util/string.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/string.ts#L57">util/string.ts:57</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3902,7 +3902,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/string.ts#L97">util/string.ts:97</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/string.ts#L97">util/string.ts:97</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3934,7 +3934,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/string.ts#L77">util/string.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/string.ts#L77">util/string.ts:77</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3966,7 +3966,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/util/string.ts#L47">util/string.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/util/string.ts#L47">util/string.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3998,7 +3998,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/canvas.ts#L156">graphics/canvas.ts:156</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/canvas.ts#L156">graphics/canvas.ts:156</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4029,7 +4029,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/graphics/canvas.ts#L169">graphics/canvas.ts:169</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/graphics/canvas.ts#L169">graphics/canvas.ts:169</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4060,7 +4060,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/37332f1/src/main/controller/GameControllers.ts#L34">controller/GameControllers.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/fryfire/fryfire/blob/db3eef1/src/main/controller/GameControllers.ts#L34">controller/GameControllers.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4114,6 +4114,9 @@
 					</li>
 					<li class=" tsd-kind-enum">
 						<a href="enums/scenenodeaspect.html" class="tsd-kind-icon">Scene<wbr>Node<wbr>Aspect</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/abstractpointerevent.html" class="tsd-kind-icon">Abstract<wbr>Pointer<wbr>Event</a>
 					</li>
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="classes/abstracttiledlayer.html" class="tsd-kind-icon">Abstract<wbr>Tiled<wbr>Layer</a>
@@ -4208,6 +4211,15 @@
 					<li class=" tsd-kind-class">
 						<a href="classes/point.html" class="tsd-kind-icon">Point</a>
 					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/pointerdownevent.html" class="tsd-kind-icon">Pointer<wbr>Down<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/pointerendevent.html" class="tsd-kind-icon">Pointer<wbr>End<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/pointermoveevent.html" class="tsd-kind-icon">Pointer<wbr>Move<wbr>Event</a>
+					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/polygon2.html" class="tsd-kind-icon">Polygon2</a>
 					</li>
@@ -4234,18 +4246,6 @@
 					</li>
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="classes/scenenodeanimation.html" class="tsd-kind-icon">Scene<wbr>Node<wbr>Animation</a>
-					</li>
-					<li class=" tsd-kind-class tsd-has-type-parameter">
-						<a href="classes/scenepointerdownevent.html" class="tsd-kind-icon">Scene<wbr>Pointer<wbr>Down<wbr>Event</a>
-					</li>
-					<li class=" tsd-kind-class tsd-has-type-parameter">
-						<a href="classes/scenepointerendevent.html" class="tsd-kind-icon">Scene<wbr>Pointer<wbr>End<wbr>Event</a>
-					</li>
-					<li class=" tsd-kind-class tsd-has-type-parameter">
-						<a href="classes/scenepointerevent.html" class="tsd-kind-icon">Scene<wbr>Pointer<wbr>Event</a>
-					</li>
-					<li class=" tsd-kind-class tsd-has-type-parameter">
-						<a href="classes/scenepointermoveevent.html" class="tsd-kind-icon">Scene<wbr>Pointer<wbr>Move<wbr>Event</a>
 					</li>
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="classes/scenes.html" class="tsd-kind-icon">Scenes</a>
