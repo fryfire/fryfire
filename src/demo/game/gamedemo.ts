@@ -54,4 +54,10 @@ class DemoGame extends Game {
 }
 
 // Instantiate and start the game
-expose("game", new DemoGame({ size: new Size(384, 216) }).start());
+const game = new DemoGame({ size: new Size(384, 216) }).start();
+expose("game", game);
+game.onPointerDown.connect(e => {
+    e.onPointerMove.connect(e => {
+        console.log(e.getX(), e.getY());
+    });
+});

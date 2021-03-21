@@ -9,11 +9,11 @@ import { Transition } from "./Transition";
 import { UpdateRootNode, DrawRootNode, RootNode } from "./RootNode";
 import { SceneNode } from "./SceneNode";
 import { Camera } from "./Camera";
-import { Signal } from "../util/Signal";
-import { ScenePointerMoveEvent } from "./events/ScenePointerMoveEvent";
-import { ScenePointerDownEvent } from "./events/ScenePointerDownEvent";
+import { signal, Signal } from "../util/Signal";
 import { Timer } from "../game/Timer";
 import { createCanvas, getRenderingContext } from "../graphics/canvas";
+import { PointerDownEvent } from "../pointer/PointerDownEvent";
+import { PointerMoveEvent } from "../pointer/PointerMoveEvent";
 
 /**
  * Constructor type of a scene.
@@ -32,6 +32,12 @@ export type SceneConstructor<T extends Game = Game, A = void> = new (game: T) =>
  *            Defaults to no argument (void type)
  */
 export abstract class Scene<T extends Game = Game, A = void> {
+    @signal(Scene.prototype.initOnPointerDown)
+    public readonly onPointerDown!: Signal<PointerDownEvent<T, A>>;
+
+    @signal(Scene.prototype.initOnPointerMove)
+    public readonly onPointerMove!: Signal<PointerMoveEvent<T, A>>;
+
     public zIndex: number = 0;
     public currentTransition: Transition | null = null;
     public inTransition: Transition | null = null;
@@ -46,9 +52,6 @@ export abstract class Scene<T extends Game = Game, A = void> {
     private backgroundStyle: string | null = null;
 
     public readonly camera: Camera<T>;
-
-    public readonly onPointerMove = new Signal<ScenePointerMoveEvent<T, A>>(this.initPointerMove.bind(this));
-    public readonly onPointerDown = new Signal<ScenePointerDownEvent<T, A>>(this.initPointerDown.bind(this));
 
     public constructor(public readonly game: T) {
         this.rootNode = new RootNode(this, (update, draw) => {
@@ -199,9 +202,9 @@ export abstract class Scene<T extends Game = Game, A = void> {
         return this;
     }
 
-    private initPointerMove(signal: Signal<ScenePointerMoveEvent<T, A>>) {
+    private initOnPointerMove(signal: Signal<PointerMoveEvent<T, A>>) {
         const listener = (event: PointerEvent) => {
-            signal.emit(new ScenePointerMoveEvent(this, event));
+            signal.emit(new PointerMoveEvent(this.game, this, event));
         };
         const canvas = this.game.getCanvas();
         canvas.addEventListener("pointermove", listener);
@@ -210,9 +213,9 @@ export abstract class Scene<T extends Game = Game, A = void> {
         };
     }
 
-    private initPointerDown(signal: Signal<ScenePointerDownEvent<T, A>>) {
+    private initOnPointerDown(signal: Signal<PointerDownEvent<T, A>>) {
         const listener = (event: PointerEvent) => {
-            signal.emit(new ScenePointerDownEvent(this, event));
+            signal.emit(new PointerDownEvent(this.game, this, event));
         };
         const canvas = this.game.getCanvas();
         canvas.addEventListener("pointerdown", listener);

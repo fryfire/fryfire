@@ -9,6 +9,8 @@ import { RGBColor } from "../color/RGBColor";
 import { updateGameControllers } from "../controller/GameControllers";
 import { Size } from "../geom/Size";
 import { createCanvas, getRenderingContext } from "../graphics/canvas";
+import { PointerDownEvent } from "../pointer/PointerDownEvent";
+import { PointerMoveEvent } from "../pointer/PointerMoveEvent";
 import { Scenes } from "../scene/Scenes";
 import { signal, Signal } from "../util/Signal";
 import { Timer, UpdateTimer } from "./Timer";
@@ -46,7 +48,7 @@ export abstract class Game {
      *
      * @event
      */
-    @signal(Game.prototype.initKeyDown)
+    @signal(Game.prototype.initOnKeyDown)
     public readonly onKeyDown!: Signal<KeyboardEvent>;
 
     /**
@@ -54,7 +56,7 @@ export abstract class Game {
      *
      * @event
      */
-    @signal(Game.prototype.initKeyUp)
+    @signal(Game.prototype.initOnKeyUp)
     public readonly onKeyUp!: Signal<KeyboardEvent>;
 
     /**
@@ -62,8 +64,24 @@ export abstract class Game {
      *
      * @event
      */
-    @signal(Game.prototype.initKeyPress)
+    @signal(Game.prototype.initOnKeyPress)
     public readonly onKeyPress!: Signal<KeyboardEvent>;
+
+    /**
+     * Signal emitted when user presses down a pointer (mouse, pen, touch) on the game.
+     *
+     * @event
+     */
+    @signal(Game.prototype.initOnPointerDown)
+    public readonly onPointerDown!: Signal<PointerDownEvent<this>>;
+
+    /**
+     * Signal emitted when user moves a pointer (mouse, pen, touch) over the game.
+     *
+     * @event
+     */
+    @signal(Game.prototype.initOnPointerMove)
+    public readonly onPointerMove!: Signal<PointerMoveEvent<this>>;
 
     public readonly scenes = new Scenes(this);
     public readonly assets = new Assets();
@@ -137,7 +155,7 @@ export abstract class Game {
         });
     }
 
-    private initKeyDown(signal: Signal<KeyboardEvent>): () => void {
+    private initOnKeyDown(signal: Signal<KeyboardEvent>): () => void {
         const listener = signal.emit.bind(signal);
         document.addEventListener("keydown", listener);
         return () => {
@@ -145,7 +163,7 @@ export abstract class Game {
         };
     }
 
-    private initKeyUp(signal: Signal<KeyboardEvent>): () => void {
+    private initOnKeyUp(signal: Signal<KeyboardEvent>): () => void {
         const listener = signal.emit.bind(signal);
         document.addEventListener("keyup", listener);
         return () => {
@@ -153,11 +171,31 @@ export abstract class Game {
         };
     }
 
-    private initKeyPress(signal: Signal<KeyboardEvent>): () => void {
+    private initOnKeyPress(signal: Signal<KeyboardEvent>): () => void {
         const listener = signal.emit.bind(signal);
         document.addEventListener("keypress", listener);
         return () => {
             document.removeEventListener("keypress", listener);
+        };
+    }
+
+    private initOnPointerDown(signal: Signal<PointerDownEvent<this>>): () => void {
+        const listener = (event: PointerEvent) => {
+            signal.emit(new PointerDownEvent(this, null, event));
+        };
+        this.canvas.addEventListener("pointerdown", listener);
+        return () => {
+            this.canvas.removeEventListener("pointerdown", listener);
+        };
+    }
+
+    private initOnPointerMove(signal: Signal<PointerMoveEvent<this>>): () => void {
+        const listener = (event: PointerEvent) => {
+            signal.emit(new PointerMoveEvent(this, null, event));
+        };
+        this.canvas.addEventListener("pointermove", listener);
+        return () => {
+            this.canvas.removeEventListener("pointermove", listener);
         };
     }
 

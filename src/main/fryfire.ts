@@ -49,6 +49,11 @@ export * from "./lang/Deserializable";
 export * from "./lang/Equatable";
 export * from "./lang/Serializable";
 
+export * from "./pointer/AbstractPointerEvent";
+export * from "./pointer/PointerDownEvent";
+export * from "./pointer/PointerEndEvent";
+export * from "./pointer/PointerMoveEvent";
+
 export * from "./scene/animations/Animation";
 export * from "./scene/animations/Animator";
 export * from "./scene/animations/ParallelAnimations";
@@ -56,11 +61,6 @@ export * from "./scene/animations/SequentialAnimations";
 
 export * from "./scene/camera/CinematicBars";
 export * from "./scene/camera/FadeToBlack";
-
-export * from "./scene/events/ScenePointerDownEvent";
-export * from "./scene/events/ScenePointerEndEvent";
-export * from "./scene/events/ScenePointerEvent";
-export * from "./scene/events/ScenePointerMoveEvent";
 
 export * from "./scene/AsepriteNode";
 export * from "./scene/Camera";

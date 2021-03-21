@@ -116,7 +116,6 @@ export class GameControllerButton {
         const pressed = button.pressed;
         if (pressed !== this.pressed) {
             this.pressed = pressed;
-            console.log("press", this.index);
             if (pressed) {
                 this.onPress.emit(this);
             } else {

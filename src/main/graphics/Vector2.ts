@@ -285,4 +285,13 @@ export class Vector2 implements ReadonlyVector2Like, Vector2Like {
         }
         return angle;
     }
+
+    /**
+     * Rounds the coordinates to integers with `Math.floor()`.
+     */
+    public floor(): this {
+        this.x = Math.floor(this.x);
+        this.y = Math.floor(this.y);
+        return this;
+    }
 }
